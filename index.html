@@ -123,6 +123,22 @@
     }</script>
 </head>
 <body>
+<amp-animation id="show" layout="nodisplay">
+    <script type="application/json">
+      {
+      "duration": "500ms",
+      "fill": "both",
+      "animations": [
+        {
+          "selector": "#image1",
+          "keyframes": [
+            { "visibility": "visible", "opacity":"1"}
+          ]
+        }
+      ]
+    }
+    </script>>
+</amp-animation>
 <amp-animation id="hide" layout="nodisplay">
   <script type="application/json">
     {
@@ -132,7 +148,7 @@
       {
         "selector": "#image1",
         "keyframes": [
-          { "visibility": "visible"}
+          { "visibility": "hidden", "opacity" : "0"}
         ]
       }
     ]
@@ -152,7 +168,7 @@
   </div>
 
   <!--<div id="interim"><p>Working on it.<br><br><br><a href="mailto:info@bad.house?Subject=Howdy!" target="_blank">info@bad.house</a><br>434 218 2207</p></div>-->
-  <div class="spacer100"></div><div><amp-position-observer on="enter:hide.start;exit:hide.start" layout="nodisplay"></amp-position-observer></div>
+  <div class="spacer100"></div><div><amp-position-observer on="enter:show.start;exit:hide.start" layout="nodisplay"></amp-position-observer></div>
   <div class="spacer100"></div>
 
 </div>
