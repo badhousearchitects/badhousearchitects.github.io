@@ -85,8 +85,12 @@
       top: 0;
       z-index:10;
     }
-    #image{
+    .container{
       position:absolute;
+      width:100vw;
+      height:100vh;
+    }
+    amp-img.cover img {
       object-fit: cover;
     }
   </style>
@@ -135,7 +139,7 @@
   </script>>
 </amp-animation>
 
-<div id="image"><amp-img src="/img/01.jpg" width="1080" height="610" layout="responsive" alt="Sacred Mountain conservatory perspective view."></amp-img></div>
+<div id="image"><amp-img class="cover" src="/img/01.jpg" layout="fill" alt="Sacred Mountain conservatory perspective view."></amp-img></div>
 
 <div class="center">
 
