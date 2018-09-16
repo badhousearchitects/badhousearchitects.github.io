@@ -1,0 +1,349 @@
+<!doctype html>
+<html ⚡>
+<head>
+<meta charset="utf-8">
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-bodymovin-animation" src="https://cdn.ampproject.org/v0/amp-bodymovin-animation-0.1.js"></script>
+<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+<script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+<script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+<script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+<script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+<script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+<script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+<title>BADHOUSE Architects</title>
+<link rel="canonical" href="https://bad.house">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Assistant:200,600" rel="stylesheet">
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<style amp-custom>
+html,body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Assistant', sans-serif;
+  color:#16161d;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 0px 0px .2px #16161d;
+  background:#f7f7fa;
+}/*
+a{
+  color:inherit;
+  font-style:inherit;
+  text-decoration: inherit;
+  outline:none;
+}
+a:hover {
+  color: #16161d;
+}
+::selection {
+  background-color: yellow;
+}
+::-moz-selection {
+  background-color: yellow;
+}
+.spacer100{
+  height:100vh;
+}
+p{
+  font-size: 42px;
+  margin:18vh auto;
+  width:92%;
+  max-width:800px;
+  font-weight:200;
+}
+p.uppercase {
+    text-transform: uppercase;
+}
+article{
+}
+figure.large{
+  margin:0;
+  position:relative;
+  width:100%;
+  height:40vh;
+  background:#16161d;
+}
+amp-img.cover img {
+  object-fit: cover;
+}
+figure.small {
+  margin:18vh auto;
+  width:92%;
+  max-width:800px;
+}
+figure.small img{
+  border-radius:3px;
+}
+figcaption{
+  font-size: 14px;
+  text-align: right;
+  text-transform: uppercase;
+  margin-top:8px;
+  font-weight: 600;
+  opacity:0;
+  transition: all .1s;
+  transition-timing-function: ease-in-out;
+}
+figure.small:hover figcaption{
+  opacity:1;
+}
+.articleTitle{
+  position:relative;
+  font-size: 14px;
+  text-align: center;
+  max-width:800px;
+  width:92%;
+  text-transform: uppercase;
+  margin:0 auto;
+  padding-top:calc(40vh + 6px);
+  font-weight: 600;
+}
+#logo_BADHOUSE{
+  position:absolute;
+  top:69vh;
+  width:92%;
+  left:4%;
+  z-index:10;
+  outline:0;
+  height:27vh;
+}
+#logo_BADHOUSE svg {
+  fill: #fff;
+  filter: blur(.5px);
+}
+#logo_BADHOUSE:hover svg{
+  fill: #16161d;
+}
+#birthVid{
+  position:absolute;
+  top:-25vh;
+  right:-0vh;
+  margin: 0;
+  width:65vh;
+  z-index:9;
+}
+header{
+  width:100%;
+  height:20px;
+  z-index:50;
+  position:absolute;
+}
+@media only screen and (max-width: 900px) {
+  p{
+    font-size: 4.58vw;
+  }
+  #birthVid{
+    right:-12vh;
+  }
+} */
+</style>
+<!-- <script type="application/ld+json">{
+  "@context": "http://schema.org/",
+  "@type": "ProfessionalService",
+  "additionalType":"http://www.productontology.org/id/Architect",
+
+  "name": "BADHOUSE",
+  "description":"We are two architects working to build the leanest, most resilient spaces possible. No magic, no fuss. Bad House, build better.",
+  "image": "https://bad.house/img/01.jpg",
+  "hasMap":"https://goo.gl/maps/TneXNzo8v2z",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "47.552066",
+    "longitude": "-122.389032"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Seattle",
+    "addressRegion": "WA",
+    "postalCode": "98136",
+    "streetAddress": "4409 SW Findlay Street"
+  },
+  "email":"info@bad.house",
+  "telephone":"434 218 2207",
+  "url":"bad.house"
+}</script> -->
+</head><body>
+
+<!-- <amp-bodymovin-animation id="birthVid" layout="responsive" width="1022" height="1482" src="json/birth.json" loop="false" renderer="html" ></amp-bodymovin-animation>
+
+<div tabindex="1" role="button" on="tap:top-page.scrollTo(duration=1500)" id="logo_BADHOUSE">
+    <svg xmlns="http://www.w3.org/2000/svg" id="logo_Text" viewBox="0 0 1127.83 147"><path d="M100.21,82.4c.39.67,1,1.67,1.79,3a32.22,32.22,0,0,1,2.31,4.8,45.83,45.83,0,0,1,1.9,6.3,27.72,27.72,0,0,1,.6,7.5,53.16,53.16,0,0,1-2.71,14.7q-2.3,6.7-9.7,13.5a38.8,38.8,0,0,1-15.3,9.1A50.78,50.78,0,0,1,65,143.6H3.6c-1.86,0-2.83-.17-2.89-.5S.6,141.27.6,138.6v-6q0-4-.1-8.5c-.06-3-.1-5.93-.1-8.8V101.4q0-4.8-.09-10T.1,81.7c-.06-3-.1-5-.1-6.1V62.2c0-2.8,0-5.5.1-8.1s.11-4.5.11-5.7v-8q0-6.19.1-13.3T.5,14q.1-6,.1-7.4A13.37,13.37,0,0,1,.71,4.7a1.85,1.85,0,0,1,.5-1.1A2.87,2.87,0,0,1,2.9,3.1C3.77,3,5,3,6.6,3q5,0,9.61.1t6.39.1c.54,0,1.57,0,3.11.1s3.19.1,5,.1,3.53,0,5.19.1,2.91.1,3.7.1H58c.94,0,2.34.1,4.21.3s3.86.5,6,.9a50.36,50.36,0,0,1,6.5,1.7A24.25,24.25,0,0,1,80.4,9.2a101.57,101.57,0,0,1,8.5,6,27,27,0,0,1,6.31,7.6A26.52,26.52,0,0,1,97.5,28a34.61,34.61,0,0,1,1.31,5.6c.26,1.87.46,3.64.59,5.3a21.92,21.92,0,0,1,0,4.3,50.19,50.19,0,0,1-1.8,8.2,22.34,22.34,0,0,1-4,8c-1.73,2.13-3.16,3.84-4.29,5.1A23.19,23.19,0,0,1,86,67.6c-1.06.8-1.46,1.4-1.19,1.8s1.59,1.2,4,2.4a25.82,25.82,0,0,1,6.9,5.2A35,35,0,0,1,100.21,82.4Zm-26,30.8a14.56,14.56,0,0,0,3.6-6.4,15.83,15.83,0,0,0,.19-9,12.48,12.48,0,0,0-3.9-7.1,57.62,57.62,0,0,0-5.29-4.1,13.39,13.39,0,0,0-3.31-1,31.5,31.5,0,0,0-4.19-.5C59.9,85,58.6,85,57.4,85h-10c-1.46,0-2.86,0-4.19-.1s-2.27-.1-2.81-.1H31.6c-1.46,0-2.36.27-2.7.8a4.64,4.64,0,0,0-.5,2.4V99.6c0,.4,0,1.47-.09,3.2s-.1,3.6-.1,5.6V117c.13.67.26,1.23.39,1.7s.74.64,1.8.5H38q1,0,5.9.2t13.1,0q8.2-.2,11.6-2.1A25.13,25.13,0,0,0,74.21,113.2ZM28.4,39v3.2c0,1.47,0,3,.1,4.7s.1,3.24.1,4.7v6.5c0,.87.54,1.3,1.61,1.3h17.6c1.46,0,3.09,0,4.9-.1a53.82,53.82,0,0,0,5.6-.5,14.77,14.77,0,0,0,5.09-1.6,13.5,13.5,0,0,0,3.7-2.9,12.63,12.63,0,0,0,2.3-3.7,22.23,22.23,0,0,0,1.2-3.9c.27-1.27.47-2.36.61-3.3a7.28,7.28,0,0,0-.31-3.1,18.09,18.09,0,0,0-1.4-3.4,20.6,20.6,0,0,0-2-3.1,26.83,26.83,0,0,0-2.1-2.4,14,14,0,0,0-6.09-2.6A33.26,33.26,0,0,0,53,28H41.31c-1,0-2.07,0-3.21-.1s-2.23-.1-3.29-.1H32.4c-1.06,0-2,0-2.69.1s-1.11.63-1.11,1.7c0,.54,0,1.9-.1,4.1S28.4,37.67,28.4,39Z"/><path d="M261,137.6a12.74,12.74,0,0,1,1.5,4.1c.07.87-.17,1.44-.7,1.7a3,3,0,0,1-1.9.2,12,12,0,0,0-2.1-.2H236q-3.41,0-4.2-.6A7.72,7.72,0,0,1,230,140q-1-2.4-1.9-5.2t-1.9-6q-.6-2-1.6-4.7t-2-5.6c-.66-1.93-1.3-3.73-1.9-5.4s-1.1-3-1.5-4.1c-.67-2.27-1.83-3.53-3.5-3.8a37.46,37.46,0,0,0-5.9-.4H176c-2.27,0-4.13.07-5.6.2a3.77,3.77,0,0,0-3.2,2.6,19,19,0,0,1-1.1,3.5c-.6,1.54-1.23,3.13-1.9,4.8s-1.3,3.24-1.9,4.7-1,2.47-1.3,3-.7,1.8-1.3,3.4-1.23,3.27-1.9,5-1.3,3.37-1.9,4.9-1,2.57-1.1,3.1q-1.2,4-5.2,3.4a43.74,43.74,0,0,0-5.5-.5c-2.07-.06-3.83-.1-5.3-.1a85.84,85.84,0,0,1-10.6.6c-1.87,0-3.07-.36-3.6-1.1s-.27-2.43.8-5.1a51.18,51.18,0,0,1,1.9-4.9c1-2.33,2.14-5.07,3.4-8.2s2.63-6.43,4.1-9.9l4.2-9.9q2-4.69,3.5-8.4c1-2.47,1.7-4.23,2.1-5.3l19.2-49.2q.6-1.4,2.6-6.4t4.2-10.7q2.21-5.7,4.2-10.6t2.6-6.1a10.8,10.8,0,0,1,1.7-3.1c.47-.47,1.77-.83,3.9-1.1h14.6a18,18,0,0,1,3.4.2c.53.14,1.13,1,1.8,2.6a40.89,40.89,0,0,0,2.2,4.5,14.3,14.3,0,0,1,1.6,3.9,24.47,24.47,0,0,0,1.7,4.2c1,2.13,2.07,4.47,3.2,7s2.2,5,3.2,7.3,1.7,4,2.1,5.1,1.2,3.1,2.4,5.7,2.5,5.4,3.9,8.4,2.7,5.9,3.9,8.7,2.07,4.87,2.6,6.2,1.73,3.57,3.2,6.7,3,6.44,4.6,9.9,3,6.63,4.3,9.5,2,4.7,2.3,5.5a45.3,45.3,0,0,0,2.4,6.4q2.21,5.2,4.9,11.5t5.5,12.2C258.67,132.84,260.07,135.73,261,137.6ZM201.4,78.4q5.81,0,3.8-5A9.8,9.8,0,0,1,204,71c-.4-1.07-.8-2.16-1.2-3.3s-.77-2.2-1.1-3.2a17.88,17.88,0,0,0-.9-2.3q-.6-1.8-2.7-6.7T194.2,46c-1.33-3.47-2.23-5-2.7-4.7s-1.37,2-2.7,4.9q-.8,2.2-2,5.5t-2.4,6.4q-1.2,3.1-2.3,5.7a33.36,33.36,0,0,0-1.3,3.4c-.27,1.07-.63,2.27-1.1,3.6s-1,2.8-1.7,4.4a8.65,8.65,0,0,0-.4,2.3c0,.6.73.9,2.2.9h21.6Z"/><path d="M406.8,39.8a65.17,65.17,0,0,1,5.7,13.8A76.94,76.94,0,0,1,415.4,70a70.59,70.59,0,0,1-1,17.5,61.08,61.08,0,0,1-5.8,17.1,77.39,77.39,0,0,1-8.5,13.5,67.09,67.09,0,0,1-8.4,8.8,47.89,47.89,0,0,1-7.7,5.5q-3.6,2-6.6,3.6a47.84,47.84,0,0,1-7.1,3q-4.1,1.4-8.3,2.4t-8.2,1.7a41,41,0,0,1-7,.7q-3,.19-8.1.2t-10.5-.1q-5.4-.1-10.2-.1h-7c-1.47.13-3.2.2-5.2.2h-6.2q-3.19,0-6-.1c-1.87-.07-3.33-.1-4.4-.1-1.87,0-2.87-.73-3-2.2s-.2-3.33-.2-5.6V111.2c0-3.06.07-5.27.2-6.6V97.4c0-3.47,0-7.13-.1-11s-.1-7.47-.1-10.8V68.8q.19-1.59.2-7.2V49.7q0-6.3-.1-11.9t-.1-7.4v-12q0-3.6-.1-6.7c-.07-2.06-.1-3.56-.1-4.5-.13-2.27.63-3.43,2.3-3.5s3.3-.1,4.9-.1h36.3c3.27,0,6.3,0,9.1.1s4.67.1,5.6.1,2.6.3,5,.5,5.07.54,8,1a76.44,76.44,0,0,1,9.2,2.1,49,49,0,0,1,9,3.6q4.2,2.21,8.4,4.7a66.3,66.3,0,0,1,8.2,5.8,61.09,61.09,0,0,1,7.8,7.8A69.31,69.31,0,0,1,406.8,39.8ZM380,99q2.81-4.2,4.6-11.9A70.5,70.5,0,0,0,386.4,71a33.54,33.54,0,0,0-1-8.2,54.9,54.9,0,0,0-2.4-7.4,68.26,68.26,0,0,0-2.9-6.2,36.18,36.18,0,0,0-2.7-4.4,35.45,35.45,0,0,0-3.2-3.6,39.84,39.84,0,0,0-4.6-3.9,57,57,0,0,0-5.2-3.4,43.94,43.94,0,0,0-5-2.5,49.38,49.38,0,0,0-5.2-1.4,54.34,54.34,0,0,0-5.6-.9c-1.87-.2-3.57-.33-5.1-.4s-2.7-.1-3.5-.1-2.17,0-4.1-.1l-6.1-.2c-2.13-.06-4.13-.1-6-.1h-4l-4.1.3c-.87.07-1.43.84-1.7,2.3a32.32,32.32,0,0,0-.3,3.4c-.07,1.47-.1,3-.1,4.6s0,3.1-.1,4.5-.1,2.5-.1,3.3V57.7c0,2.33,0,4.57.1,6.7s.1,3.6.1,4.4v35.5c0,2.6,0,5,.1,7.3s.1,3.67.1,4.2a15.08,15.08,0,0,1,.1,2.9c-.07.73.83,1.1,2.7,1.1s4.23,0,7.1-.1,5.23,0,7.1.1c.93,0,2.37,0,4.3.1a57.15,57.15,0,0,0,6.6-.2q3.71-.3,8.1-.9a52.62,52.62,0,0,0,8.8-2,34.94,34.94,0,0,0,7.8-3.5,32.14,32.14,0,0,0,5.9-4.6,48.2,48.2,0,0,0,4.4-5Q378.61,101.21,380,99Z"/><path d="M436.6,30.6c0-1.33,0-3.26-.1-5.8s-.1-5.1-.1-7.7V5.6a1.51,1.51,0,0,1,1.3-1.9,14.81,14.81,0,0,1,2.9-.3h22a2.71,2.71,0,0,1,2.1.6c.33.4.43,1.67.3,3.8s-.17,4.23-.1,6.3.1,4.1.1,6.1v4.5c0,1.94,0,4-.1,6.2s-.1,4.3-.1,6.3V55.8a6,6,0,0,0,.4,2.8c.27.4.93.6,2,.6h5.7c2.47,0,5,0,7.5.1s4.83.1,6.9.1h8.6q3.11,0,6.6-.1c2.33-.06,4.53-.1,6.6-.1h4.3q2.4,0,6.4-.1t7-.1c1.73,0,2.63-.36,2.7-1.1s.1-1.63.1-2.7V5.8q0-1.8,1.2-2.1a10.87,10.87,0,0,1,3.4-.1,43.44,43.44,0,0,0,5.4.1c2.13-.06,3.93-.1,5.4-.1h11q1.8,0,2.1.9a12.07,12.07,0,0,1,.3,3.3v3.5c0,1.54,0,3.17-.1,4.9s-.1,3.37-.1,4.9v7.4c0,1.8,0,3.7-.1,5.7s-.1,3.87-.1,5.6V48q0,3.6.1,8.1c.07,3,.1,6,.1,9.1V80.1q0,4.31-.1,8.6c-.07,2.87-.1,5.53-.1,8v43.7a12,12,0,0,1-.2,2.1c-.13.73-1.07,1.1-2.8,1.1-2,0-3.93,0-5.8-.1s-3.33-.1-4.4-.1H533.2a3.86,3.86,0,0,1-2.7-.7,4.23,4.23,0,0,1-.7-2.9v-12c0-.93,0-2-.1-3.2s-.1-2.46-.1-3.8,0-2.57-.1-3.7-.1-2.1-.1-2.9v-7.7c0-1.53,0-3,.1-4.4s.1-2.43.1-3.1a42.14,42.14,0,0,0,0-5.8,48.71,48.71,0,0,1,0-6.2c.13-1.6-.2-2.4-1-2.4s-2-.06-3.6-.2c-.8,0-2.07,0-3.8-.1s-3.5-.1-5.3-.1H468.4a14.39,14.39,0,0,0-2.5.2c-.73.14-1.1.87-1.1,2.2q0,4.61.1,8.9t.1,7.9v36.8a4,4,0,0,1-.6,2.4c-.4.54-1.73.8-4,.8h-20q-2.59-.19-3-.6a5.3,5.3,0,0,1-.6-2.6c0-.8,0-2-.1-3.7s-.13-3.46-.2-5.4-.1-3.7-.1-5.3v-3.4c0-.53,0-2,.1-4.3s.1-4.83.1-7.5v-17c0-2.67,0-5.53.1-8.6s.1-5.93.1-8.6V66.9q0-3.09.1-6.5c.07-2.26.1-4.4.1-6.4V46.2c0-1.6,0-3.33-.1-5.2s-.13-3.76-.2-5.7S436.6,31.8,436.6,30.6Z"/><path d="M734.2,70.6a63.4,63.4,0,0,1-2.7,23.8,84.52,84.52,0,0,1-8.3,18.3,62.19,62.19,0,0,1-9.4,12.1c-3.07,2.93-4.93,4.67-5.6,5.2s-2.2,1.67-4.6,3.4a69.23,69.23,0,0,1-9.1,5.4,87.68,87.68,0,0,1-12.5,5.1,56.76,56.76,0,0,1-14.8,2.7,86,86,0,0,1-28.4-2.9,68.91,68.91,0,0,1-22-10.5,79.1,79.1,0,0,1-18.5-19.9,74,74,0,0,1-6.9-13.5,52.09,52.09,0,0,1-3.4-15,132.93,132.93,0,0,1-.4-14.3A80.1,80.1,0,0,1,589,57.6a67.22,67.22,0,0,1,3.6-12.2A86.11,86.11,0,0,1,599,32.8a53,53,0,0,1,10.5-12.3,80.06,80.06,0,0,1,14.6-10.1,81.63,81.63,0,0,1,17.1-6.9,67.25,67.25,0,0,1,18-2.5,82.56,82.56,0,0,1,11.2.8,98.73,98.73,0,0,1,11.5,2.3,85.45,85.45,0,0,1,10.8,3.6,48.4,48.4,0,0,1,8.9,4.7,106.63,106.63,0,0,1,9,7.1A62.73,62.73,0,0,1,720.7,31a77.4,77.4,0,0,1,13.5,39.6ZM699.8,96.8a39.86,39.86,0,0,0,3.2-8.3,53.49,53.49,0,0,0,1.6-9.2,60.3,60.3,0,0,0,.1-9.2,54.56,54.56,0,0,0-1.1-8.1,37.06,37.06,0,0,0-2.6-7.5,59,59,0,0,0-4.3-7.7,52.49,52.49,0,0,0-5.4-6.9,43.21,43.21,0,0,0-5.9-5.3,30.26,30.26,0,0,0-12.7-5.4A79.86,79.86,0,0,0,659,28a34.81,34.81,0,0,0-12,2.2,69.23,69.23,0,0,0-11.4,5.4,25.17,25.17,0,0,0-5.3,4.1,55.13,55.13,0,0,0-4.8,5.5,52.11,52.11,0,0,0-4,6,43.3,43.3,0,0,0-2.7,5.6,41.16,41.16,0,0,0-1.7,7.5,69,69,0,0,0-.7,10.2,61,61,0,0,0,1,11,32.8,32.8,0,0,0,3.4,9.9,40.13,40.13,0,0,0,5.9,8.9,56.56,56.56,0,0,0,6.5,6.3,35.8,35.8,0,0,0,6.1,4.1,29.75,29.75,0,0,0,4.9,2.1c.93.27,2.07.63,3.4,1.1a25.64,25.64,0,0,0,4.9,1.1,62.06,62.06,0,0,0,6.8.5,65.4,65.4,0,0,0,9.1-.5q12-1.6,19.7-8A45.73,45.73,0,0,0,699.8,96.8Z"/><path d="M763.8,12.6V7.8a4.91,4.91,0,0,1,.6-2.7,3,3,0,0,1,1.9-1.2,18.77,18.77,0,0,1,3.9-.3h17.6c1.2,0,2.13,0,2.8.1a2.32,2.32,0,0,1,1.6.8,4,4,0,0,1,.7,2.3c.07,1.07.1,2.6.1,4.6s-.23,4.63-.3,7.9-.13,6.67-.2,10.2-.1,7-.1,10.4v18q0,5.91.1,12c.07,4.07.13,7.87.2,11.4a48.42,48.42,0,0,0,.5,7.3q.4,2.2,1.2,5.5a50,50,0,0,0,2.2,6.8,47.34,47.34,0,0,0,3.3,6.7,14.8,14.8,0,0,0,4.7,5,29.86,29.86,0,0,0,4.6,3,22.11,22.11,0,0,0,3.7,1.5,20.54,20.54,0,0,0,3.4.7,32.53,32.53,0,0,0,3.7.2,25.33,25.33,0,0,0,5-.1,26.08,26.08,0,0,0,6.3-1.5,23.7,23.7,0,0,0,6.5-3.7,22.51,22.51,0,0,0,5.6-6.7,34.6,34.6,0,0,0,3.6-9.3,92,92,0,0,0,1.8-10.1,79.83,79.83,0,0,0,.6-9.5V69.4q-.2-3.2-.3-8.9T849,48.6V6.8c0-1.87.43-3,1.3-3.3s2.83-.36,5.9-.1c3.47.13,6.53.17,9.2.1s5.13,0,7.4.1h2.5a1.63,1.63,0,0,1,1.4.7,5.44,5.44,0,0,1,.7,2.4,46.05,46.05,0,0,1,.2,4.9V75.8q0,4.61-.3,10.3t-1.2,11.6a53.28,53.28,0,0,1-2.7,10.7Q872,112,869.5,117a56.3,56.3,0,0,1-6.4,9.9,50.14,50.14,0,0,1-9.4,9A37.9,37.9,0,0,1,841,142a83.57,83.57,0,0,1-13.3,2.6,73.87,73.87,0,0,1-10.5.4,58.69,58.69,0,0,1-7.9-.8A50.57,50.57,0,0,1,804,143q-2-.6-6.5-2.2a46.94,46.94,0,0,1-9.6-4.9,49,49,0,0,1-9.9-8.7,41.83,41.83,0,0,1-7.8-13.6A81.92,81.92,0,0,1,766,97.1q-1.2-8.3-1.6-15.6t-.3-13.1c.07-3.87,0-6.93-.1-9.2s0-4.56-.1-7.3-.1-5.4-.1-8,0-5,.1-7.3.17-4,.3-5.2V26.5c0-2.07-.07-4.16-.2-6.3Q763.81,16.6,763.8,12.6Z"/><path d="M945.2,81.6a35.08,35.08,0,0,1-8-3.6q-4-2.4-10.2-6a25.86,25.86,0,0,1-5.4-4.3,44.07,44.07,0,0,1-4.3-5.2,40.6,40.6,0,0,1-3.2-5.3l-2.3-4.6a27.41,27.41,0,0,1-1.9-6.1,43,43,0,0,1-.9-9.2,37.8,37.8,0,0,1,1.6-10.6,27,27,0,0,1,5.8-10.3q8.4-9.6,17.4-12.5A64.11,64.11,0,0,1,952.2.8c3.06,0,6,.1,8.8.3a41.2,41.2,0,0,1,8.4,1.5,43.53,43.53,0,0,1,8.5,3.5A73,73,0,0,1,987,12q4.8,3.6,7.1,5.6a8.64,8.64,0,0,1,2.7,3.3,2.18,2.18,0,0,1-.6,2.3l-2.6,2.6q-2.8,2.81-5.3,5.7t-5.9,6.7q-2.21,2.2-3.1,1.3T976,36.6q-3.4-2.6-6-4.4a32.41,32.41,0,0,0-4.8-2.8,24.09,24.09,0,0,0-4.4-1.5q-2.2-.49-4.8-.9a18.41,18.41,0,0,0-8.2.5,34.69,34.69,0,0,0-5.4,2.5,6.6,6.6,0,0,0-2.4,2.6,18.34,18.34,0,0,0-1.9,4.4,14.08,14.08,0,0,0-.5,5.1,9.31,9.31,0,0,0,1.8,4.9,22.47,22.47,0,0,0,8.5,7.4,73.51,73.51,0,0,0,12.3,4.2,68.8,68.8,0,0,1,7.6,2.5q3.8,1.5,7.3,3.3t6.2,3.5q2.7,1.69,4.5,2.9a38.34,38.34,0,0,1,4.4,3.6,29.81,29.81,0,0,1,5,6.3,47.76,47.76,0,0,1,4.3,9.4,43.62,43.62,0,0,1,2.1,12.9q.39,15-7.2,24.7A44.31,44.31,0,0,1,974.2,142a58.09,58.09,0,0,1-11.8,3.2,60.38,60.38,0,0,1-10.1.7,51.22,51.22,0,0,1-8.4-.8q-3.71-.71-6.3-1.3a37.21,37.21,0,0,1-6.4-2.1,59.26,59.26,0,0,1-15.8-10,55.18,55.18,0,0,1-7.4-7.9,21.43,21.43,0,0,1-2.7-3.8,3.48,3.48,0,0,1-.4-2.5,3.82,3.82,0,0,1,1.5-2c.8-.6,1.86-1.43,3.2-2.5a37.86,37.86,0,0,0,4.7-4,25.93,25.93,0,0,1,3.7-3.2,24.78,24.78,0,0,0,2-1.8,9.12,9.12,0,0,1,1.9-1.5,2,2,0,0,1,1.7-.2A2.9,2.9,0,0,1,925,104a27.88,27.88,0,0,0,3.5,5.4,29.79,29.79,0,0,0,8.1,6.6,35.69,35.69,0,0,0,8.5,3.9,38.35,38.35,0,0,0,8.2,1.6,30.46,30.46,0,0,0,7.1-.2,14.45,14.45,0,0,0,5.2-1.7,27.63,27.63,0,0,0,7.7-6.9q3.09-4.1,1.9-10.9a17.18,17.18,0,0,0-2.2-6,19.55,19.55,0,0,0-3.8-4.5,31.12,31.12,0,0,0-4.6-3.3,35.27,35.27,0,0,0-4.4-2.2q-2.21-.8-4.8-1.5c-1.74-.46-3.34-.9-4.8-1.3Q948,82.21,945.2,81.6Z"/><path d="M1058.2,33.4v9.7c0,2.07,0,4-.1,5.8s-.1,3-.1,3.7a20.34,20.34,0,0,1-.2,3.3c-.14.74.53,1.1,2,1.1h4.6c1.6,0,3.73.14,6.4.4h5c2,0,4.06,0,6.2-.1s4.26-.1,6.4-.1,4,.07,5.6.2h4.1a13,13,0,0,1,2.6.2,1.9,1.9,0,0,1,1.3.9,5.59,5.59,0,0,1,.4,2.5q0,3.6.1,7.5c.06,2.6.1,5.1.1,7.5a22,22,0,0,1-.3,4.1c-.2,1-1.17,1.5-2.9,1.5q-3.4,0-8.7.2a68.61,68.61,0,0,1-9.3-.2h-20.2c-1.74,0-2.7.63-2.9,1.9a26.42,26.42,0,0,0-.3,4.1v26.6a24.44,24.44,0,0,0,.2,3.2c.13,1.07.93,1.6,2.4,1.6H1087c1.2,0,3.1,0,5.7-.1s5.43-.17,8.5-.3l9.1-.4c3-.13,5.56-.2,7.7-.2,4.26-.27,6.93-.23,8,.1s1.6,1.5,1.6,3.5v15c0,1.2.06,2.6.2,4.2s-.54,2.4-2,2.4c-.8,0-1.9,0-3.3-.1s-3-.1-4.7-.1-3.54,0-5.4-.1-3.6-.1-5.2-.1-3.2,0-4.8.1-3.3.14-5.1.2-3.84.13-6.1.2-4.87.1-7.8.1-5.4.2-7.4.2-3.8,0-5.4-.1l-4.4-.2c-1.34-.07-2.8-.1-4.4-.1h-26.56a14.74,14.74,0,0,1-4.94-.5c-.73-.33-1-2.16-.7-5.5,0-1.6.06-3.63.2-6.1s.23-5.87.3-10.2,0-7.23-.1-8.7v-6.9c0-3.13,0-6.13-.1-9s-.14-5.6-.2-8.2-.1-4.56-.1-5.9v-53c0-2.4,0-4.86.1-7.4s.1-5,.1-7.4v-6a9.87,9.87,0,0,1,.4-3.6c.27-.53,1.14-.93,2.62-1.2a22.77,22.77,0,0,1,4.13-.1q3.12.1,6.84.2l7.15.2c2.28.07,4,.1,5.24.1s3.15,0,6.21-.1,6.37-.1,9.91-.1,6.86,0,10-.1,5.3-.1,6.5-.1h13.4q4.2,0,8.1-.1c2.6-.07,4.56-.1,5.9-.1a23.66,23.66,0,0,1,4.9-.2c.6.14,1,1.27,1.3,3.4a58.1,58.1,0,0,1,.4,7v9c0,2.93-.44,4.57-1.3,4.9a18.36,18.36,0,0,1-4.9.7c-1.74.14-3.67.2-5.8.2h-12.3a37,37,0,0,0-4.3.2c-1.07,0-2.84,0-5.3.1s-5.2.14-8.2.2l-9.2.2q-4.71.11-7.9.1a16.21,16.21,0,0,0-4.5.4C1058.36,29.87,1058.06,31.14,1058.2,33.4Z"/></svg>
+</div>
+
+<div class="spacer100"></div>
+
+<div id="top-page"></div> -->
+
+<amp-sidebar id="drawermenu" layout="nodisplay">
+
+    <input type="radio" id="yellow" name="colorFilter" class="relative" value="Yellow" on="change:AMP.setState({
+    products: {
+    searchColor: event.checked == true ? 'yellow' : '',
+    listSrc: '/samples_templates/products?searchProduct='+ products.searchProduct +'&sort='+ products.sortChoiceValue +'&searchColor='+ (event.checked == true ? 'yellow' : '') +'&_=RANDOM'
+    }
+    })">
+    <label for="yellow"> yellow </label>
+
+    <input type="radio" id="orange" name="colorFilter" class="relative" value="Orange" on="change:AMP.setState({
+    products: {
+    searchColor: event.checked == true ? 'orange' : '',
+    listSrc: '/samples_templates/products?searchProduct='+ products.searchProduct +'&sort='+ products.sortChoiceValue +'&searchColor='+ (event.checked == true ? 'orange' : '') +'&_=RANDOM'
+    }
+    })">
+    <label for="orange"> orange </label>
+
+    <input type="radio" id="green" name="colorFilter" class="relative" value="Green" on="change:AMP.setState({
+    products: {
+    searchColor: event.checked == true ? 'green' : '',
+    listSrc: '/samples_templates/products?searchProduct='+ products.searchProduct +'&sort='+ products.sortChoiceValue +'&searchColor='+ (event.checked == true ? 'green' : '') +'&_=RANDOM'
+    }
+    })">
+    <label for="green"> green </label>
+
+    <input type="radio" id="all" name="colorFilter" class="relative" value="all" on="change:AMP.setState({
+    products: {
+    searchColor: event.checked == true ? 'all' : '',
+    listSrc: '/samples_templates/products?searchProduct='+ products.searchProduct +'&sort='+ products.sortChoiceValue +'&searchColor='+ (event.checked == true ? 'all' : '') +'&_=RANDOM'
+    }
+    })">
+    <label for="all"> all </label>
+
+</amp-sidebar>
+
+
+<div class="header">
+  <a id="sample-menu" on="tap:drawermenu.toggle">
+    <amp-img srcset="/img/ic_menu_white_1x_web_24dp.png 1x, /img/ic_menu_white_2x_web_24dp.png 2x" width="24" height="24" alt="navigation"></amp-img>
+  </a>
+
+  <select id="sort" on="change:AMP.setState({
+                        products: {
+                        sortChoiceValue: event.value,
+                        listSrc: '/samples_templates/products?searchProduct='+products.searchProduct+'&sort='+event.value+'&searchColor='+products.searchColor+'&_=RANDOM'
+                        }
+                        })">
+    <option value="price-descendent">Price high to low
+    </option>
+    <option value="price-ascendent">Price low to high
+    </option>
+  </select>
+
+  <input name="search" type="text" placeholder="Search" on="change:AMP.setState({
+    products: {
+    listSrc: '/samples_templates/products?searchProduct='+ event.value +'&sort='+ products.sortChoiceValue +'&searchColor='+ products.searchColor +'&_=RANDOM',
+    searchProduct: event.value
+  }});
+    input-debounced:
+      AMP.setState({
+        query: event.value,
+        showDropdown: event.value,
+      }),
+    autosuggest-list.show;
+    tap:
+      AMP.setState({
+        query: query == null ? '' : query,
+        showDropdown: 'true'
+      }),
+      autosuggest-list.show"
+    [value]="query || ''"
+    value="">
+
+  <div class="suggest">
+      <div
+        class="autosuggest-container hidden"
+        [class]="(showDropdown && query) ?
+          'autosuggest-container' :
+          'autosuggest-container hidden'"
+      >
+        <amp-list
+          class="autosuggest-box"
+          layout="fixed-height"
+          height="120"
+          src="/samples_templates/products_autosuggest"
+          [src]="query ?
+            autosuggest.endpoint + query :
+            autosuggest.emptyAndInitialTemplateJson"
+          id="autosuggest-list"
+        >
+          <template type="amp-mustache">
+            <amp-selector
+              id="autosuggest-selector"
+              keyboard-select-mode="focus"
+              layout="container"
+              on="
+                select:
+                  AMP.setState({
+                    query: event.targetOption,
+                    showDropdown: false
+                  }),
+                  autosuggest-list.hide"
+            >
+              {{#results}}
+                <div
+                  class="select-option no-outline ml2"
+                  role="option"
+                  tabindex="0"
+                  on="tap:autosuggest-list.hide"
+                  option="{{.}}"
+                >{{.}}</div>
+              {{/results}}
+              {{^results}}
+                <div class="select-option {{#query}}empty{{/query}}">
+                  {{#query}}Sorry! We couldn't find the product 😰{{/query}}
+                </div>
+              {{/results}}
+            </amp-selector>
+          </template>
+        </amp-list>
+      </div>
+    </div>
+
+  <input type="submit" value="">
+</div>
+
+
+<amp-state id="products">
+  <script type="application/json">
+{
+        "sortChoiceValue": "price-descendent",
+        "searchProduct": "",
+        "searchColor": "all",
+        "listSrc": "/samples_templates/products?sortChoiceValue=price-descendent&searchColor=all&_=RANDOM"
+      }
+  </script>
+</amp-state>
+
+
+
+<div id="main-wrap">
+    <amp-list width="auto"
+              height="600"
+              layout="fixed-height"
+              src="/samples_templates/products?sortChoiceValue=price-descendent&searchColor=all&_=RANDOM'"
+              [src]="products.listSrc"
+              class="grid">
+      <template type="amp-mustache">
+          {{color}} {{name}}
+      </template>
+    </amp-list>
+</div>
+
+
+<amp-state id="autosuggest">
+  <script type="application/json">
+  {
+    "endpoint": "/samples_templates/products_autosuggest?q=",
+    "emptyAndInitialTemplateJson": [{
+      "query": "",
+      "results": []
+    }]
+  }
+  </script>
+</amp-state>
+</body>
+</html>
