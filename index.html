@@ -155,23 +155,9 @@ amp-img{
 }</script>
 </head><body>
 
-<nav>
-  <a href="#s1"><div class="navChild"><div class="navButton"></div></div></a>
-</nav >
-
 <div class="m1">
   <amp-state id="allPosts"
     src="/json/posts.json"></amp-state>
-  <h3>Filter</h3>
-  <select class="mt1 ampstart-input"
-    on="change:AMP.setState({filteredPosts: allPosts.items.filter(a => event.value == 'all' ? true : a.color == event.value)})">
-    <option value="all"
-      selected="">All</option>
-    <option value="red">red</option>
-    <option value="green">green</option>
-    <option value="yellow">yellow</option>
-    <option value="orange">orange</option>
-  </select>
   <amp-list credentials="include"
     width="auto"
     height="1000px"
