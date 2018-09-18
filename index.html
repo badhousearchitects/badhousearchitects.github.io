@@ -19,7 +19,6 @@ html,body {
   text-rendering:optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-shadow: 0px 0px .2px #16161d;
   background:#f7f7fa;
 }
 a{
@@ -61,6 +60,7 @@ p{
   width:92%;
   max-width:800px;
   font-weight:200;
+  text-shadow: 0px 0px .2px #16161d;
 }
 p.uppercase {
     text-transform: uppercase;
@@ -72,7 +72,7 @@ figure.large{
   position: sticky;
   top: 0;
   width:100%;
-  height:30vh;
+  height:calc(30vh + 1px);
   background:#16161d;
   margin-top:-30vh;
   z-index:10;
@@ -116,13 +116,12 @@ figcaption{
   opacity:0;
   transition: all .1s;
   transition-timing-function: ease-in-out;
-  text-shadow: 0px 0px .03px #16161d;
 }
 figure.small:hover figcaption{
   opacity:1;
 }
 amp-sidebar{
-  width: 34vw;
+  width: 45vw;
   background:#fff;
   margin:0;
   padding:0;
@@ -152,7 +151,7 @@ button.clicked svg{
   display: block;
   position: relative;
   cursor: pointer;
-  margin-left:50px;
+  margin-left:2vw;
   margin-top:30px;
   font-size: 42px;
   font-weight:200;
@@ -161,7 +160,6 @@ button.clicked svg{
   -ms-user-select: none;
   user-select: none;
   color:#ddd;
-  text-shadow:none;
 }
 .container input {
   position: absolute;
@@ -176,6 +174,7 @@ button.clicked svg{
 }
 .container input:checked ~ .checkmark {
   color: #16161d;
+  text-shadow: 0px 0px .2px #16161d;
 }
 @media only screen and (max-width: 900px) {
   p{
