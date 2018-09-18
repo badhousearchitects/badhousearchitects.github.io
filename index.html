@@ -223,7 +223,7 @@ button.clicked svg{
 </amp-state>
 
 
-<amp-sidebar id="sidebar1" layout="nodisplay" side="right" on="sidebarClose:hamburger.toggleClass(class=clicked),topPage.scrollTo(duration=600)">
+<amp-sidebar id="sidebar1" layout="nodisplay" side="right" on="sidebarClose:hamburger.toggleClass(class=clicked),topPage.scrollTo(duration=600),AMP.setState({tags: {accordion:false}})">
   <label class="container">
     <input type="radio" name="tags" value="All Posts" checked on="change:AMP.setState({tags: {about:true,people:true,sacredMountain:true}})">
     <span class="checkmark">All Posts</span>
