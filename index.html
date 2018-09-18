@@ -214,7 +214,7 @@ button.clicked svg{
 <amp-state id="tags">
   <script type="application/json">
     {
-      "accordion":false,
+      "accordion": false;
       "sacredMountain": false,
       "about": false,
       "people": false
@@ -294,6 +294,10 @@ button.clicked svg{
 
 <article id="a3" [hidden]="tags.about == false">
         <figure id="a3f" class="large" role="article" tabindex="1" on="tap:AMP.setState({tags: {accordion:!tags.accordion}}),a3.scrollTo(duration=1)">
+          <amp-img class="cover" alt="Cactus Pointcloud"
+            src="/img/what0.jpg"
+            layout="fill">
+          </amp-img>
         <div class="articleTitle">2016 11 02&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BADHOUSE</div>
       </figure>
 
