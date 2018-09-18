@@ -214,10 +214,10 @@ button.clicked svg{
 <amp-state id="tags">
   <script type="application/json">
     {
-      "accordion": false;
-      "sacredMountain": false,
-      "about": false,
-      "people": false
+      "sacredMountain": true,
+      "about": true,
+      "people": true,
+      "accordion": false
     }
   </script>
 </amp-state>
@@ -256,7 +256,7 @@ button.clicked svg{
 <div class="spacer" id="topPage"></div>
 
 <article id="sm1" [hidden]="tags.sacredMountain == false">
-        <figure id="sm1f" class="large" role="article" tabindex="1"  on="tap:AMP.setState({tags: {accordion:!tags.accordion}}),sm1.scrollTo(duration=1)">
+        <figure id="sm1f" class="large" role="article" tabindex="1"  on="tap:AMP.setState({tags: {accordion: !tags.accordion}}),sm1.scrollTo(duration=1)">
           <amp-img class="cover" alt="Satellite Image of Sacred Mountain"
             src="/img/sm00.jpg"
             layout="fill">
