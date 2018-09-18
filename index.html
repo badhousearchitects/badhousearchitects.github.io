@@ -1,10 +1,11 @@
-<!doctype html>
+<!doctype html lang="en">
 <html ⚡>
 <head>
 <meta charset="utf-8">
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
 <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 <title>BADHOUSE Architects</title>
 <link rel="canonical" href="https://bad.house">
 <meta name="description" content="We are two architects working to build the leanest, most resilient spaces possible. No magic, no fuss. Badhouse, build better.">
@@ -75,6 +76,7 @@ figure.large{
   margin-top:-30vh;
   z-index:10;
   outline:none;
+  cursor: pointer;
 }
 figure.largeClosed{
   position: relative
@@ -137,6 +139,7 @@ button {
 button svg{
     fill:#fff;
     transition:all .3s;
+    cursor:pointer;
 }
 button:hover svg{
     transform:rotate(90deg);
@@ -157,7 +160,7 @@ button.clicked svg{
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color:#ddd;
+  color:#bbb;
 }
 .container input {
   position: absolute;
@@ -187,8 +190,8 @@ button.clicked svg{
   "@type": "ProfessionalService",
   "additionalType":"http://www.productontology.org/id/Architect",
 
-  "name": "BADHOUSE",
-  "description":"Architects for a better build",
+  "name": "BADHOUSE Architects",
+  "description":"We are two architects working to build the leanest, most resilient spaces possible. No magic, no fuss. Badhouse, build better.",
   "image": "https://bad.house/img/01.jpg",
   "hasMap":"https://goo.gl/maps/TneXNzo8v2z",
   "geo": {
@@ -211,7 +214,7 @@ button.clicked svg{
 <amp-state id="tags">
   <script type="application/json">
     {
-      "accordion":false;
+      "accordion":false,
       "sacredMountain": false,
       "about": false,
       "people": false
@@ -246,14 +249,14 @@ button.clicked svg{
 <!-- <div id="badhouse"></div> -->
 <header>
   <button id="hamburger" on='tap:sidebar1.toggle, hamburger.toggleClass(class=clicked)'>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="presentation" ><title>hamburger</title><rect x="30" y="47" width="40" height="6" rx="1" ry="1"/><rect x="30" y="36.691" width="40" height="6" rx="1" ry="1"/><rect x="30" y="57.309" width="40" height="6" rx="1" ry="1"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="presentation"><rect x="30" y="47" width="40" height="6" rx="1" ry="1"/><rect x="30" y="36.691" width="40" height="6" rx="1" ry="1"/><rect x="30" y="57.309" width="40" height="6" rx="1" ry="1"/></svg>
   </button>
 </header>
 
 <div class="spacer" id="topPage"></div>
 
 <article id="sm1" [hidden]="tags.sacredMountain == false">
-        <figure id="sm1f" class="large" role="article" tabindex="1"  on="tap:AMP.setState({tags: {accordion:!tags.accordion}}),sm1f.scrollTo(duration=1)">
+        <figure id="sm1f" class="large" role="article" tabindex="1"  on="tap:AMP.setState({tags: {accordion:!tags.accordion}}),sm1.scrollTo(duration=1)">
           <amp-img class="cover" alt="Satellite Image of Sacred Mountain"
             src="/img/sm00.jpg"
             layout="fill">
@@ -290,7 +293,7 @@ button.clicked svg{
 </article>
 
 <article id="a3" [hidden]="tags.about == false">
-        <figure id="a3f" class="large" role="article" tabindex="1" on="tap:AMP.setState({tags: {accordion:!tags.accordion}}),a3f.scrollTo(duration=1)">
+        <figure id="a3f" class="large" role="article" tabindex="1" on="tap:AMP.setState({tags: {accordion:!tags.accordion}}),a3.scrollTo(duration=1)">
         <div class="articleTitle">2016 11 02&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BADHOUSE</div>
       </figure>
 
@@ -343,7 +346,7 @@ button.clicked svg{
 </article>
 
 <article id="a2" [hidden]="tags.about == false && tags.people == false">
-      <figure id="a2f" class="large" role="article" tabindex="1" on="tap:AMP.setState({tags: {accordion:!tags.accordion}}),a2f.scrollTo(duration=1)">
+      <figure id="a2f" class="large" role="article" tabindex="1" on="tap:AMP.setState({tags: {accordion:!tags.accordion}}),a2.scrollTo(duration=1)">
         <amp-img class="cover" alt="Mark Keller at Gothic Basin"
           src="/img/mark.jpg"
           layout="fill">
@@ -371,7 +374,7 @@ button.clicked svg{
 </article>
 
 <article id="a1" [hidden]="tags.about == false && tags.people == false">
-      <figure id="a1f" class="large" role="article" tabindex="1" on="tap:AMP.setState({tags: {accordion:!tags.accordion}}),a1f.scrollTo(duration=1)">
+      <figure id="a1f" class="large" role="article" tabindex="1" on="tap:AMP.setState({tags: {accordion:!tags.accordion}}),a1.scrollTo(duration=1)">
         <amp-img class="cover" alt="Annie Aldrich at the Marin Headlands"
           src="/img/annie.jpg"
           layout="fill">
@@ -396,6 +399,33 @@ button.clicked svg{
 
       <div class="spacer"></div></section><div class="spacerHalf"></div>
 </article>
-</div>
+
+<amp-analytics type="googleanalytics">
+<script type="application/json">
+{
+  "vars": {
+    "account": "UA-126023124-1"
+  },
+  "triggers": {
+      "trackPageview": {
+        "on": "visible",
+        "request": "pageview",
+        "vars": {
+          "title": "BADHOUSE Architects"
+        }
+      },
+      "trackClickOnHeader" : {
+        "on": "click",
+        "selector": "article",
+        "request": "event",
+        "vars": {
+          "eventCategory": "ui-components",
+          "eventAction": "header-click"
+        }
+      }
+    }
+}
+</script>
+</amp-analytics>
 </body>
 </html>
