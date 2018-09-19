@@ -258,8 +258,12 @@ button.clicked svg{
 <article id="sm1" [hidden]="tags.sacredMountain == false">
         <figure id="sm1f" class="large" role="article" tabindex="1"  on="tap:AMP.setState({tags: {accordion: !tags.accordion}}),sm1.scrollTo(duration=1)">
           <amp-img class="cover" alt="Satellite Image of Sacred Mountain"
-            src="/img/sm00.jpg"
+            srcset="/img/sm00_2400.webp 2400w,/img/sm00_1800.webp 1800w,/img/sm00_1200.webp 1200w,/img/sm00_800.webp 800w"
             layout="fill">
+            <amp-img class="cover" fallback alt="Satellite Image of Sacred Mountain"
+              srcset="/img/sm00_2400.jpg 2400w,/img/sm00_1800.jpg 1800w,/img/sm00_1200.jpg 1200w,/img/sm00_800.jpg 800w"
+              layout="fill">
+            </amp-img>
           </amp-img>
         <div class="articleTitle">2017 04 23&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sacred Mountain&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prompt</div>
       </figure>
@@ -269,10 +273,14 @@ button.clicked svg{
 
       <figure class="small">
         <amp-img alt="First Sketch"
-          src="/img/sm01.jpg"
-          width="800"
-          height="422"
+          width="1600"
+          height="787"
+          srcset="/img/sm01_1600.webp 1600w,/img/sm01_1200.webp 1200w,/img/sm01_800.webp 800w"
           layout="responsive">
+          <amp-img fallback alt="First Sketch"
+            srcset="/img/sm01_1600.jpg 1600w,/img/sm01_1200.jpg 1200w,/img/sm01_800.jpg 800w"
+            layout="responsive">
+          </amp-img>
         </amp-img>
         <figcaption>First Sketch</figcaption>
       </figure>
@@ -281,10 +289,14 @@ button.clicked svg{
 
       <figure class="small">
         <amp-img alt="Tectonics"
-          src="/img/sm02.jpg"
-          width="800"
-          height="696"
+          width="1600"
+          height="1161"
+          srcset="/img/sm02_1600.webp 1600w,/img/sm02_1200.webp 1200w,/img/sm02_800.webp 800w"
           layout="responsive">
+          <amp-img fallback alt="Tectonics"
+            srcset="/img/sm02_1600.jpg 1600w,/img/sm02_1200.jpg 1200w,/img/sm02_800.jpg 800w"
+            layout="responsive">
+          </amp-img>
         </amp-img>
         <figcaption>Tectonics</figcaption>
       </figure>
@@ -292,11 +304,15 @@ button.clicked svg{
       <div class="spacer"></div></section><div class="spacerHalf"></div>
 </article>
 
-<article id="a3" [hidden]="tags.about == false">
-        <figure id="a3f" class="large" role="article" tabindex="1" on="tap:AMP.setState({tags: {accordion:!tags.accordion}}),a3.scrollTo(duration=1)">
+<article id="ab3" [hidden]="tags.about == false">
+        <figure id="ab3f" class="large" role="article" tabindex="1" on="tap:AMP.setState({tags: {accordion:!tags.accordion}}),ab3.scrollTo(duration=1)">
           <amp-img class="cover" alt="Cactus Pointcloud"
-            src="/img/what0.jpg"
+            srcset="/img/ab30_2400.webp 2400w,/img/ab30_1800.webp 1800w,/img/ab30_1200.webp 1200w,/img/ab30_800.webp 800w"
             layout="fill">
+            <amp-img class="cover" fallback alt="Cactus Pointcloud"
+              srcset="/img/ab30_2400.jpg 2400w,/img/ab30_1800.jpg 1800w,/img/ab30_1200.jpg 1200w,/img/ab30_800.jpg 800w"
+              layout="fill">
+            </amp-img>
           </amp-img>
         <div class="articleTitle">2016 11 02&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BADHOUSE</div>
       </figure>
@@ -307,10 +323,14 @@ button.clicked svg{
 
       <figure class="small">
         <amp-img alt="Can Home"
-          src="/img/what1.jpg"
-          width="800"
-          height="533"
+          width="1600"
+          height="1063"
+          srcset="/img/ab31_1600.webp 1600w,/img/ab31_1200.webp 1200w,/img/ab31_800.webp 800w"
           layout="responsive">
+          <amp-img fallback alt="Can Home"
+            srcset="/img/ab31_1600.jpg 1600w,/img/ab31_1200.jpg 1200w,/img/ab31_800.jpg 800w"
+            layout="responsive">
+          </amp-img>
         </amp-img>
         <figcaption>Can Home</figcaption>
       </figure>
@@ -319,10 +339,14 @@ button.clicked svg{
 
       <figure class="small">
         <amp-img alt="Banana Peel Home"
-          src="/img/what2.jpg"
-          width="800"
-          height="242"
+          width="1600"
+          height="566"
+          srcset="/img/ab32_1600.webp 1600w,/img/ab32_1200.webp 1200w,/img/ab32_800.webp 800w"
           layout="responsive">
+          <amp-img fallback alt="Banana Peel Home"
+            srcset="/img/ab32_1600.jpg 1600w,/img/ab32_1200.jpg 1200w,/img/ab32_800.jpg 800w"
+            layout="responsive">
+          </amp-img>
         </amp-img>
         <figcaption>Banana Peel Home</figcaption>
       </figure>
@@ -331,10 +355,14 @@ button.clicked svg{
 
       <figure class="small">
         <amp-img alt="Elephant Foot Home"
-          src="/img/what3.jpg"
-          width="800"
-          height="543"
+          width="1600"
+          height="1600"
+          srcset="/img/ab33_1600.webp 1600w,/img/ab33_1200.webp 1200w,/img/ab33_800.webp 800w"
           layout="responsive">
+          <amp-img fallback alt="Elephant Foot Home"
+            srcset="/img/ab33_1600.jpg 1600w,/img/ab33_1200.jpg 1200w,/img/ab33_800.jpg 800w"
+            layout="responsive">
+          </amp-img>
         </amp-img>
         <figcaption>Elephant Foot Home</figcaption>
       </figure>
@@ -349,11 +377,15 @@ button.clicked svg{
       <div class="spacer"></div></section><div class="spacerHalf"></div>
 </article>
 
-<article id="a2" [hidden]="tags.about == false && tags.people == false">
-      <figure id="a2f" class="large" role="article" tabindex="1" on="tap:AMP.setState({tags: {accordion:!tags.accordion}}),a2.scrollTo(duration=1)">
+<article id="ab2" [hidden]="tags.about == false && tags.people == false">
+      <figure id="ab2f" class="large" role="article" tabindex="1" on="tap:AMP.setState({tags: {accordion:!tags.accordion}}),ab2.scrollTo(duration=1)">
         <amp-img class="cover" alt="Mark Keller at Gothic Basin"
-          src="/img/mark.jpg"
+          srcset="/img/ab20_2400.webp 2400w,/img/ab20_1800.webp 1800w,/img/ab20_1200.webp 1200w,/img/ab20_800.webp 800w"
           layout="fill">
+          <amp-img class="cover" fallback alt="Mark Keller at Gothic Basin"
+            srcset="/img/ab20_2400.jpg 2400w,/img/ab20_1800.jpg 1800w,/img/ab20_1200.jpg 1200w,/img/ab20_800.jpg 800w"
+            layout="fill">
+          </amp-img>
         </amp-img>
         <div class="articleTitle">1987 06 27&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mark Keller</div>
       </figure>
@@ -377,11 +409,15 @@ button.clicked svg{
       <div class="spacer"></div></section><div class="spacerHalf"></div>
 </article>
 
-<article id="a1" [hidden]="tags.about == false && tags.people == false">
-      <figure id="a1f" class="large" role="article" tabindex="1" on="tap:AMP.setState({tags: {accordion:!tags.accordion}}),a1.scrollTo(duration=1)">
+<article id="ab1" [hidden]="tags.about == false && tags.people == false">
+      <figure id="ab1f" class="large" role="article" tabindex="1" on="tap:AMP.setState({tags: {accordion:!tags.accordion}}),ab1.scrollTo(duration=1)">
         <amp-img class="cover" alt="Annie Aldrich at the Marin Headlands"
-          src="/img/annie.jpg"
+          srcset="/img/ab10_2400.webp 2400w,/img/ab30_1800.webp 1800w,/img/ab30_1200.webp 1200w,/img/ab30_800.webp 800w"
           layout="fill">
+          <amp-img class="cover" fallback alt="Annie Aldrich at the Marin Headlands"
+            srcset="/img/ab30_2400.jpg 2400w,/img/ab30_1800.jpg 1800w,/img/ab30_1200.jpg 1200w,/img/ab30_800.jpg 800w"
+            layout="fill">
+          </amp-img>
         </amp-img>
         <div class="articleTitle">1986 07 24&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Annie Aldrich</div>
       </figure>
