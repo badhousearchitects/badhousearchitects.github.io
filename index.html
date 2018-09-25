@@ -33,13 +33,13 @@ a{
   border-bottom: .5px dashed #aaa;
 }
 a:hover {
-  background:yellow;
+  background:#fdfd32;
 }
 ::selection {
-  background-color: yellow;
+  background-color: rgba(253,253,50,.99);
 }
 ::-moz-selection {
-  background-color: yellow;
+  background-color: rgba(253,253,50,.99);
 }
 .spacer{
   height:30vh;
@@ -188,7 +188,7 @@ button.clicked svg{
   padding:10px;
 }
 .container:hover .checkmark {
-  background-color: yellow;
+  background-color: #fdfd32;
   color: #16161d;
 }
 .container input:checked ~ .checkmark {
@@ -204,7 +204,7 @@ button.clicked svg{
   font-weight:200;
 }
 .contact:hover .checkmark {
-  background-color: yellow;
+  background-color: #fdfd32;
 }
 #badhouse{
   fill:#16161d;
@@ -276,6 +276,9 @@ button.clicked svg{
   #DN{
       top:calc(100vh - 120px);
   }
+  .contact {
+    bottom:70px;
+  }
 }
 </style>
 <script type="application/ld+json">{
@@ -310,6 +313,7 @@ button.clicked svg{
     {
       "sacredMountain": true,
       "oldCluff":true,
+      "schematic":true,
       "about": true,
       "people": true,
       "accordion": false
@@ -319,27 +323,27 @@ button.clicked svg{
 
 <amp-sidebar id="sidebar1" layout="nodisplay" side="right" on="sidebarClose:hamburger.toggleClass(class=clicked),topPage.scrollTo(duration=600),AMP.setState({tags: {accordion:false}})">
   <label class="container">
-    <input type="radio" name="tags" value="All Posts" checked on="change:AMP.setState({tags: {about:true,people:true,sacredMountain:true,oldCluff:true}})">
+    <input type="radio" name="tags" value="All Posts" checked on="change:AMP.setState({tags: {about:true,people:true,sacredMountain:true,oldCluff:true,schematic:true}})">
     <span class="checkmark">All Posts</span>
   </label>
 
   <label class="container">
-    <input type="radio" name="tags" value="Sacred Mountain" on="change:AMP.setState({tags: {about:false,people:false,sacredMountain:true,oldCluff:false}})">
+    <input type="radio" name="tags" value="Sacred Mountain" on="change:AMP.setState({tags: {about:false,people:false,sacredMountain:true,oldCluff:false,schematic:false}})">
     <span class="checkmark">Sacred Mountain</span>
   </label>
 
   <label class="container">
-    <input type="radio" name="tags" value="Old Cluff" on="change:AMP.setState({tags: {about:false,people:false,sacredMountain:false,oldCluff:true}})">
+    <input type="radio" name="tags" value="Old Cluff" on="change:AMP.setState({tags: {about:false,people:false,sacredMountain:false,oldCluff:true,schematic:false}})">
     <span class="checkmark">Old Cluff</span>
   </label>
 
   <label class="container">
-    <input type="radio" name="tags" value="About" on="change:AMP.setState({tags: {about:true,people:false,sacredMountain:false,oldCluff:false}})">
+    <input type="radio" name="tags" value="About" on="change:AMP.setState({tags: {about:true,people:false,sacredMountain:false,oldCluff:false,schematic:false}})">
     <span class="checkmark">About</span>
   </label>
 
   <label class="container">
-    <input type="radio" name="tags" value="People" on="change:AMP.setState({tags: {about:false,people:true,sacredMountain:false,oldCluff:false}})">
+    <input type="radio" name="tags" value="People" on="change:AMP.setState({tags: {about:false,people:true,sacredMountain:false,oldCluff:false,schematic:false}})">
     <span class="checkmark">People</span>
   </label>
 
@@ -388,8 +392,81 @@ button.clicked svg{
 
 <div class="spacer" id="topPage"></div>
 
+<article id="st0" [hidden]="tags.schematic == false">
+        <figure id="st0f" class="large" role="article" tabindex="0"  on="tap:AMP.setState({tags: {accordion: !tags.accordion}}),st0.scrollTo(duration=1)">
+          <amp-img class="cover" alt="Satellite Image of Old Cluff"
+            src="img/st00_1200.webp"
+            srcset="img/st00_2400.webp 2400w,
+                    img/st00_1800.webp 1800w,
+                    img/st00_1200.webp 1200w,
+                    img/st00_800.webp 800w"
+            layout="fill">
+            <amp-img class="cover" fallback alt="Satellite Image of Olf Cluff"
+              src="img/st00_1200.jpg"
+              srcset="img/st00_2400.jpg 2400w,
+                      img/st00_1800.jpg 1800w,
+                      img/st00_1200.jpg 1200w,
+                      img/st00_800.jpg 800w"
+              layout="fill">
+            </amp-img>
+          </amp-img>
+        <div class="articleTitle">2018 02 09&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stand&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Schematic</div>
+      </figure>
+      <div class="spacerHalf"></div><section [hidden]="tags.accordion == true">
+
+      <p>Use: Cabin, accessory dwelling unit.<br><br>Footprint: 160 SF<br><br>Products: Steel deer stand, Aerogel insulated fabric</p>
+
+      <figure class="small">
+        <amp-img alt="Stand in the Morning Fog"
+          src="img/st01_800.webp"
+          width="1600"
+          height="1548"
+          srcset="img/st01_1600.webp 1600w,
+                  img/st01_1200.webp 1200w,
+                  img/st01_800.webp 800w"
+          layout="responsive">
+          <amp-img fallback alt="Stand in the Morning Fog"
+            src="img/st01_800.jpg"
+            width="1600"
+            height="1548"
+            srcset="img/st01_1600.jpg 1600w,
+                    img/st01_1200.jpg 1200w,
+                    img/st01_800.jpg 800w"
+            layout="responsive">
+          </amp-img>
+        </amp-img>
+        <figcaption>Stand in the Morning Fog</figcaption>
+      </figure>
+
+      <p>A prototype deployable structure for those who enjoy life more with less. Fully insulated envelope without thermal bridges. Three levels. Optional tackle box.</p>
+
+<figure class="small">
+  <amp-img alt="Figuration Sketch"
+    src="img/st03_800.webp"
+    width="1600"
+    height="1086"
+    srcset="img/st03_1600.webp 1600w,
+            img/st03_1200.webp 1200w,
+            img/st03_800.webp 800w"
+    layout="responsive">
+    <amp-img fallback alt="Figuration Sketch"
+      src="img/st03_800.jpg"
+      width="1600"
+      height="1086"
+      srcset="img/st03_1600.jpg 1600w,
+              img/st03_1200.jpg 1200w,
+              img/st03_800.jpg 800w"
+      layout="responsive">
+    </amp-img>
+  </amp-img>
+  <figcaption>Figuration Sketch</figcaption>
+</figure>
+
+      <div class="spacer"></div></section><div class="spacerHalf"></div>
+</article>
+
 <article id="oc0" [hidden]="tags.oldCluff == false">
-        <figure id="oc10" class="large" role="article" tabindex="0"  on="tap:AMP.setState({tags: {accordion: !tags.accordion}}),oc0.scrollTo(duration=1)">
+        <figure id="oc0f" class="large" role="article" tabindex="0"  on="tap:AMP.setState({tags: {accordion: !tags.accordion}}),oc0.scrollTo(duration=1)">
           <amp-img class="cover" alt="Satellite Image of Old Cluff"
             src="img/oc00_1200.webp"
             srcset="img/oc00_2400.webp 2400w,
