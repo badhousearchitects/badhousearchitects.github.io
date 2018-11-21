@@ -290,27 +290,27 @@ button.clicked:hover svg{
 </amp-state>
 
 <div id="sidebar1">
-  <label class="container">
+  <label class="container noSelect">
     <input type="radio" name="tags" value="All Posts" checked on="change:AMP.setState({tags: {about:true,sacredMountain:true,oldCluff:true,schematic:true}}),sidebar1.toggleClass(class=clicked),hamburger.toggleClass(class=clicked),topPage.scrollTo(duration=600)">
-    <span class="checkmark noSelect">All Posts</span>
+    <span class="checkmark">All Posts</span>
   </label>
 
-  <label class="container">
+  <label class="container noSelect">
     <input type="radio" name="tags" value="Sacred Mountain" on="change:AMP.setState({tags: {about:false,sacredMountain:true,oldCluff:false,schematic:false}}),sidebar1.toggleClass(class=clicked),hamburger.toggleClass(class=clicked),topPage.scrollTo(duration=600)">
-    <span class="checkmark noSelect">Sacred Mountain</span>
+    <span class="checkmark">Sacred Mountain</span>
   </label>
 
-  <label class="container">
+  <label class="container noSelect">
     <input type="radio" name="tags" value="Old Cluff" on="change:AMP.setState({tags: {about:false,sacredMountain:false,oldCluff:true,schematic:false}}),sidebar1.toggleClass(class=clicked),hamburger.toggleClass(class=clicked),topPage.scrollTo(duration=600)">
-    <span class="checkmark noSelect">Old Cluff</span>
+    <span class="checkmark">Old Cluff</span>
   </label>
 
-  <label class="container">
+  <label class="container noSelect">
     <input type="radio" name="tags" value="About" on="change:AMP.setState({tags: {about:true,sacredMountain:false,oldCluff:false,schematic:false}}),sidebar1.toggleClass(class=clicked),hamburger.toggleClass(class=clicked),topPage.scrollTo(duration=600)">
-    <span class="checkmark noSelect">About</span>
+    <span class="checkmark">About</span>
   </label>
 
-  <label class="contact"><a href="mailto:info@bad.house?subject=Howdy&body=What%20are%20you%20looking%20to%20build&#63;" target="_blank"><span class="checkmark">info@bad.house</span></a></label>
+  <label class="contact noSelect"><a href="mailto:info@bad.house?subject=Howdy&body=What%20are%20you%20looking%20to%20build&#63;" target="_blank"><span class="checkmark">info@bad.house</span></a></label>
 </div>
 
 <header>
