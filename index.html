@@ -32,6 +32,14 @@ a{
 a:hover {
   background:#fdfd32;
 }
+.noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 ::selection {
   background-color: rgba(253,253,50,.99);
 }
@@ -69,10 +77,7 @@ p.uppercase {
     text-transform: uppercase;
 }
 figure{
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+
 }
 figure.large{
   margin:0;
@@ -308,7 +313,7 @@ button.clicked:hover svg{
 </div>
 
 <header>
-  <button id="hamburger" on='tap:sidebar1.toggleClass(class=clicked), hamburger.toggleClass(class=clicked)'>
+  <button id="hamburger" class="noSelect" on='tap:sidebar1.toggleClass(class=clicked), hamburger.toggleClass(class=clicked)'>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="presentation"><rect x="30" y="47" width="40" height="6" rx="1" ry="1"/><rect x="30" y="36.691" width="40" height="6" rx="1" ry="1"/><rect x="30" y="57.309" width="40" height="6" rx="1" ry="1"/></svg>
   </button>
 </header>
@@ -316,7 +321,7 @@ button.clicked:hover svg{
 <div class="spacer" id="topPage"></div>
 
 <article id="ha0" [hidden]="tags.schematic == false">
-        <figure id="ha0f" class="large" role="article" tabindex="0"  on="tap:AMP.setState({tags: {accordion: !tags.accordion}}),ha0.scrollTo(duration=1)">
+        <figure id="ha0f" class="large noSelect" role="article" tabindex="0"  on="tap:AMP.setState({tags: {accordion: !tags.accordion}}),ha0.scrollTo(duration=1)">
           <amp-img class="cover" alt="Satellite Image of HAM"
             src="img/ha00_1200.webp"
             srcset="img/ha00_2400.webp 2400w,
@@ -337,7 +342,7 @@ button.clicked:hover svg{
 
       <p>Use: Lookout tower, meditation stilt.<br><br>Footprint: 24 SF<br><br>Products: Galvanized steel heavy-duty crank-up radio tower, wood platform</p>
 
-      <figure class="small">
+      <figure class="small noSelect">
         <amp-img alt="HAM tower elevation"
           src="img/ha01_800.webp"
           width="1600"
@@ -365,7 +370,7 @@ button.clicked:hover svg{
 </article>
 
 <article id="st0" [hidden]="tags.schematic == false">
-        <figure id="st0f" class="large" role="article" tabindex="0"  on="tap:AMP.setState({tags: {accordion: !tags.accordion}}),st0.scrollTo(duration=1)">
+        <figure id="st0f" class="large noSelect" role="article" tabindex="0"  on="tap:AMP.setState({tags: {accordion: !tags.accordion}}),st0.scrollTo(duration=1)">
           <amp-img class="cover" alt="Satellite Image of Old Cluff"
             src="img/st00_1200.webp"
             srcset="img/st00_2400.webp 2400w,
@@ -386,7 +391,7 @@ button.clicked:hover svg{
 
       <p>Use: Cabin, accessory dwelling unit.<br><br>Footprint: 160 SF<br><br>Products: Steel deer stand, Aerogel insulated fabric</p>
 
-      <figure class="small">
+      <figure class="small noSelect">
         <amp-img alt="Stand in the Morning Fog"
           src="img/st01_800.webp"
           width="1600"
@@ -410,7 +415,7 @@ button.clicked:hover svg{
 
       <p>A prototype deployable structure for those who enjoy life more with less. Fully insulated envelope without thermal bridges. Three levels. Optional tackle box.</p>
 
-<figure class="small">
+<figure class="small noSelect">
   <amp-img alt="Figuration Sketch"
     src="img/st03_800.webp"
     width="1600"
@@ -436,7 +441,7 @@ button.clicked:hover svg{
 </article>
 
 <article id="oc0" [hidden]="tags.oldCluff == false">
-        <figure id="oc0f" class="large" role="article" tabindex="0"  on="tap:AMP.setState({tags: {accordion: !tags.accordion}}),oc0.scrollTo(duration=1)">
+        <figure id="oc0f" class="large noSelect" role="article" tabindex="0"  on="tap:AMP.setState({tags: {accordion: !tags.accordion}}),oc0.scrollTo(duration=1)">
           <amp-img class="cover" alt="Satellite Image of Old Cluff"
             src="img/oc00_1200.webp"
             srcset="img/oc00_2400.webp 2400w,
@@ -457,7 +462,7 @@ button.clicked:hover svg{
 
       <p>Location: 43.41&deg; N, 70.48&deg; W<br>Kennebunkport, ME<br><br>Use: Full-time Home<br><br>Lot Size: 3.04 acres<br><br>Target Footprint: 1,200 SF<br><br>Design Duration: 2 months</p>
 
-      <figure class="small">
+      <figure class="small noSelect">
         <amp-img alt="First Plan"
           src="img/oc01_800.webp"
           width="1600"
@@ -488,7 +493,7 @@ The roof extends from the house to the garage, creating an exterior deck. An imp
 </article>
 
 <article id="sm1" [hidden]="tags.sacredMountain == false">
-        <figure id="sm1f" class="large" role="article" tabindex="0"  on="tap:AMP.setState({tags: {accordion: !tags.accordion}}),sm1.scrollTo(duration=1)">
+        <figure id="sm1f" class="large noSelect" role="article" tabindex="0"  on="tap:AMP.setState({tags: {accordion: !tags.accordion}}),sm1.scrollTo(duration=1)">
           <amp-img class="cover" alt="Sacred Mountain snow"
             src="img/sm12_1200.webp"
             srcset="img/sm12_2400.webp 2400w,
@@ -519,7 +524,7 @@ The roof extends from the house to the garage, creating an exterior deck. An imp
 </article>
 
 <article id="sm0" [hidden]="tags.sacredMountain == false">
-        <figure id="sm0f" class="large" role="article" tabindex="0"  on="tap:AMP.setState({tags: {accordion: !tags.accordion}}),sm0.scrollTo(duration=1)">
+        <figure id="sm0f" class="large noSelect" role="article" tabindex="0"  on="tap:AMP.setState({tags: {accordion: !tags.accordion}}),sm0.scrollTo(duration=1)">
           <amp-img class="cover" alt="Satellite Image of Sacred Mountain"
             src="img/sm03_1200.webp"
             srcset="img/sm03_2400.webp 2400w,
@@ -540,7 +545,7 @@ The roof extends from the house to the garage, creating an exterior deck. An imp
 
       <p>Location: 48.74&deg; N, 123.46&deg; W<br>Salt Spring Island, BC<br><br>Use: Full-time Home<br><br>Lot Size: 7.65 acres<br><br>Target Footprint: 5,000 SF<br><br>Design Duration: 11 months</p>
 
-      <figure class="small">
+      <figure class="small noSelect">
         <amp-img alt="First Sketch"
           src="img/sm01_800.webp"
           width="1600"
@@ -564,7 +569,7 @@ The roof extends from the house to the garage, creating an exterior deck. An imp
 
       <p>&ldquo;Attaching a 2 minute sketch here. I am getting excited about the interconnected living spaces you have described, and am thinking about ways to best conceptualize this spatially.<br><br>A first thought is to elevate a series of south-facing glass structures that contain all living spaces that require light and views. Bermed (to take thermal advantage of the earth) would be spaces...that need less light. The idea would be to...let the small glass spaces sit quietly on the land without overwhelming.&rdquo;</p>
 
-      <figure class="small">
+      <figure class="small noSelect">
         <amp-img alt="Tectonics"
           src="img/sm02_800.webp"
           width="1600"
@@ -590,7 +595,7 @@ The roof extends from the house to the garage, creating an exterior deck. An imp
 </article>
 
 <article id="ab3" [hidden]="tags.about == false">
-        <figure id="ab3f" class="large" role="article" tabindex="0" on="tap:AMP.setState({tags: {accordion:!tags.accordion}}),ab3.scrollTo(duration=1)">
+        <figure id="ab3f" class="large noSelect" role="article" tabindex="0" on="tap:AMP.setState({tags: {accordion:!tags.accordion}}),ab3.scrollTo(duration=1)">
           <amp-img class="cover" alt="Cactus Pointcloud"
             src="img/ab30_1200.webp"
             srcset="img/ab30_2400.webp 2400w,
@@ -612,7 +617,7 @@ The roof extends from the house to the garage, creating an exterior deck. An imp
 
       <p>What if your house already exists, but it just doesn't look like a house?</p>
 
-      <figure class="small">
+      <figure class="small noSelect">
         <amp-img alt="Can Home"
           src="img/ab31_800.webp"
           width="1600"
@@ -636,7 +641,7 @@ The roof extends from the house to the garage, creating an exterior deck. An imp
 
       <p>What if your house has a sheddable coat&mdash;tailored, continuous, compostable?</p>
 
-      <figure class="small">
+      <figure class="small noSelect">
         <amp-img alt="Banana Peel Home"
           src="img/ab32_800.webp"
           width="1600"
@@ -660,7 +665,7 @@ The roof extends from the house to the garage, creating an exterior deck. An imp
 
       <p>What if your house has a life on its own, at scales of time and space unimaginable?</p>
 
-      <figure class="small">
+      <figure class="small noSelect">
         <amp-img alt="Elephant Foot Home"
           src="img/ab33_800.webp"
           width="1600"
@@ -693,7 +698,7 @@ The roof extends from the house to the garage, creating an exterior deck. An imp
 </article>
 
 <article id="ab2" [hidden]="tags.about == false">
-      <figure id="ab2f" class="large" role="article" tabindex="0" on="tap:AMP.setState({tags: {accordion:!tags.accordion}}),ab2.scrollTo(duration=1)">
+      <figure id="ab2f" class="large noSelect" role="article" tabindex="0" on="tap:AMP.setState({tags: {accordion:!tags.accordion}}),ab2.scrollTo(duration=1)">
         <amp-img class="cover" alt="Mark Keller at Gothic Basin"
           src="img/ab20_1200.webp"
           srcset="img/ab20_2400.webp 2400w,
@@ -732,7 +737,7 @@ The roof extends from the house to the garage, creating an exterior deck. An imp
 </article>
 
 <article id="ab1" [hidden]="tags.about == false">
-      <figure id="ab1f" class="large" role="article" tabindex="0" on="tap:AMP.setState({tags: {accordion:!tags.accordion}}),ab1.scrollTo(duration=1)">
+      <figure id="ab1f" class="large noSelect" role="article" tabindex="0" on="tap:AMP.setState({tags: {accordion:!tags.accordion}}),ab1.scrollTo(duration=1)">
         <amp-img class="cover" alt="Annie Aldrich at the Marin Headlands"
           src="img/ab10_1200.webp"
           srcset="img/ab10_2400.webp 2400w,
