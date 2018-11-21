@@ -292,22 +292,22 @@ button.clicked:hover svg{
 <div id="sidebar1">
   <label class="container">
     <input type="radio" name="tags" value="All Posts" checked on="change:AMP.setState({tags: {about:true,sacredMountain:true,oldCluff:true,schematic:true}}),sidebar1.toggleClass(class=clicked),hamburger.toggleClass(class=clicked),topPage.scrollTo(duration=600)">
-    <span class="checkmark">All Posts</span>
+    <span class="checkmark noSelect">All Posts</span>
   </label>
 
   <label class="container">
     <input type="radio" name="tags" value="Sacred Mountain" on="change:AMP.setState({tags: {about:false,sacredMountain:true,oldCluff:false,schematic:false}}),sidebar1.toggleClass(class=clicked),hamburger.toggleClass(class=clicked),topPage.scrollTo(duration=600)">
-    <span class="checkmark">Sacred Mountain</span>
+    <span class="checkmark noSelect">Sacred Mountain</span>
   </label>
 
   <label class="container">
     <input type="radio" name="tags" value="Old Cluff" on="change:AMP.setState({tags: {about:false,sacredMountain:false,oldCluff:true,schematic:false}}),sidebar1.toggleClass(class=clicked),hamburger.toggleClass(class=clicked),topPage.scrollTo(duration=600)">
-    <span class="checkmark">Old Cluff</span>
+    <span class="checkmark noSelect">Old Cluff</span>
   </label>
 
   <label class="container">
     <input type="radio" name="tags" value="About" on="change:AMP.setState({tags: {about:true,sacredMountain:false,oldCluff:false,schematic:false}}),sidebar1.toggleClass(class=clicked),hamburger.toggleClass(class=clicked),topPage.scrollTo(duration=600)">
-    <span class="checkmark">About</span>
+    <span class="checkmark noSelect">About</span>
   </label>
 
   <label class="contact"><a href="mailto:info@bad.house?subject=Howdy&body=What%20are%20you%20looking%20to%20build&#63;" target="_blank"><span class="checkmark">info@bad.house</span></a></label>
@@ -366,6 +366,295 @@ button.clicked:hover svg{
       </figure>
 
       <p>"Really excited about this idea: a pre-engineered, pre-fabricated tower that is trucked to your house and easy to install.<br><br>This type of tower is actually telescoping with an electric motor, meaning you could get onto the platform at its low height and have it lift you above the canopy."</p>
+
+      <div class="spacer"></div></section><div class="spacerHalf"></div>
+</article>
+
+<article id="oc1" [hidden]="tags.oldCluff == false">
+        <figure id="oc1f" class="large noSelect" role="article" tabindex="0"  on="tap:AMP.setState({tags: {accordion: !tags.accordion}}),oc1.scrollTo(duration=1)">
+          <amp-img class="cover" alt="Aerial rendering of Old Cluff"
+            src="img/oc02_1200.webp"
+            srcset="img/oc02_2400.webp 2400w,
+                    img/oc02_1800.webp 1800w,
+                    img/oc02_1200.webp 1200w"
+            layout="fill">
+            <amp-img class="cover" fallback alt="Aerial rendering of Old Cluff"
+              src="img/oc02_1200.jpg"
+              srcset="img/oc02_2400.jpg 2400w,
+                      img/oc02_1800.jpg 1800w,
+                      img/oc02_1200.jpg 1200w"
+              layout="fill">
+            </amp-img>
+          </amp-img>
+        <div class="articleTitle">2018 07 18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Old Cluff&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Permit</div>
+      </figure>
+      <div class="spacerHalf"></div><section [hidden]="tags.accordion == true">
+
+
+
+
+      <figure class="small noSelect">
+        <amp-img alt="Axonometric framing and finishes"
+          src="img/oc03_800.webp"
+          width="1600"
+          height="1000"
+          srcset="img/oc03_1600.webp 1600w,
+                  img/oc03_1200.webp 1200w,
+                  img/oc03_800.webp 800w"
+          layout="responsive">
+          <amp-img fallback alt="Axonometric framing and finishes"
+            src="img/oc03_800.jpg"
+            width="1600"
+            height="1000"
+            srcset="img/oc03_1600.jpg 1600w,
+                    img/oc03_1200.jpg 1200w,
+                    img/oc03_800.jpg 800w"
+            layout="responsive">
+          </amp-img>
+        </amp-img>
+        <figcaption>Axonometric framing and finishes</figcaption>
+      </figure>
+
+      <figure class="small noSelect">
+        <amp-img alt="View from driveway"
+          src="img/oc04_800.webp"
+          width="1600"
+          height="800"
+          srcset="img/oc04_1600.webp 1600w,
+                  img/oc04_1200.webp 1200w,
+                  img/oc04_800.webp 800w"
+          layout="responsive">
+          <amp-img fallback alt="View from driveway"
+            src="img/oc04_800.jpg"
+            width="1600"
+            height="800"
+            srcset="img/oc04_1600.jpg 1600w,
+                    img/oc04_1200.jpg 1200w,
+                    img/oc04_800.jpg 800w"
+            layout="responsive">
+          </amp-img>
+        </amp-img>
+        <figcaption>South side of house</figcaption>
+      </figure>
+
+      <figure class="small noSelect">
+        <amp-img alt="View from rear of house"
+          src="img/oc05_800.webp"
+          width="1600"
+          height="800"
+          srcset="img/oc05_1600.webp 1600w,
+                  img/oc05_1200.webp 1200w,
+                  img/oc05_800.webp 800w"
+          layout="responsive">
+          <amp-img fallback alt="View from rear of house"
+            src="img/oc05_800.jpg"
+            width="1600"
+            height="800"
+            srcset="img/oc05_1600.jpg 1600w,
+                    img/oc05_1200.jpg 1200w,
+                    img/oc05_800.jpg 800w"
+            layout="responsive">
+          </amp-img>
+        </amp-img>
+        <figcaption>North side of house</figcaption>
+      </figure>
+
+      <p>Climate zone: 6A<br>
+      Ground snow load: 50psf<br>
+      Wind design speed: 100mph<br>
+      Seismic design category: C<br>
+      Frost line depth: 48"<br>
+      Termite hazard: Slight<br>
+      Winter design temperature: 0&deg;C<br>
+      Air freezing index: 1410<br>
+      Mean annual temperature: 7&deg;C<br>
+      Exposure category: B<br><br>
+      R52 roof, R20 + R11 walls, R20 slab<br>
+      Roof pitch: 3:12, 9:12 at solar panels<br>
+</p>
+
+    <figure class="small noSelect">
+      <amp-img alt="Ground floor plan"
+        src="img/oc06_800.webp"
+        width="1600"
+        height="550"
+        srcset="img/oc06_1600.webp 1600w,
+                img/oc06_1200.webp 1200w,
+                img/oc06_800.webp 800w"
+        layout="responsive">
+        <amp-img fallback alt="Ground floor plan"
+          src="img/oc06_800.jpg"
+          width="1600"
+          height="550"
+          srcset="img/oc06_1600.jpg 1600w,
+                  img/oc06_1200.jpg 1200w,
+                  img/oc06_800.jpg 800w"
+          layout="responsive">
+        </amp-img>
+      </amp-img>
+      <figcaption>Ground floor plan</figcaption>
+    </figure>
+
+    <figure class="small noSelect">
+      <amp-img alt="View from entry"
+        src="img/oc07_800.webp"
+        width="1600"
+        height="1000"
+        srcset="img/oc07_1600.webp 1600w,
+                img/oc07_1200.webp 1200w,
+                img/oc07_800.webp 800w"
+        layout="responsive">
+        <amp-img fallback alt="View from entry"
+          src="img/oc07_800.jpg"
+          width="1600"
+          height="1000"
+          srcset="img/oc07_1600.jpg 1600w,
+                  img/oc07_1200.jpg 1200w,
+                  img/oc07_800.jpg 800w"
+          layout="responsive">
+        </amp-img>
+      </amp-img>
+      <figcaption>View from entry</figcaption>
+    </figure>
+
+    <p>&ldquo;Must have:<br><br>
+Good-sized open kitchen a huge island and seating for four. It would be nice for two people to be able to comfortably cook in the kitchen without bumping into each other.<br><br>
+Floor-to Ceiling windows<br><br>
+Sunny House, especially in the winter<br><br>
+Open concept<br><br>
+Keep old age in mind.  We hope to die in this house, so we want it to be able to accommodate us as we age.
+&rdquo;</p>
+
+  <figure class="small noSelect">
+    <amp-img alt="Long section"
+      src="img/oc10_800.webp"
+      width="1600"
+      height="466"
+      srcset="img/oc10_1600.webp 1600w,
+              img/oc10_1200.webp 1200w,
+              img/oc10_800.webp 800w"
+      layout="responsive">
+      <amp-img fallback alt="Long section"
+        src="img/oc10_800.jpg"
+        width="1600"
+        height="466"
+        srcset="img/oc10_1600.jpg 1600w,
+                img/oc10_1200.jpg 1200w,
+                img/oc10_800.jpg 800w"
+        layout="responsive">
+      </amp-img>
+    </amp-img>
+    <figcaption>Long section</figcaption>
+  </figure>
+
+  <figure class="small noSelect">
+    <amp-img alt="View of living area"
+      src="img/oc09_800.webp"
+      width="1600"
+      height="600"
+      srcset="img/oc09_1600.webp 1600w,
+              img/oc09_1200.webp 1200w,
+              img/oc09_800.webp 800w"
+      layout="responsive">
+      <amp-img fallback alt="View of living area"
+        src="img/oc09_800.jpg"
+        width="1600"
+        height="600"
+        srcset="img/oc09_1600.jpg 1600w,
+                img/oc09_1200.jpg 1200w,
+                img/oc09_800.jpg 800w"
+        layout="responsive">
+      </amp-img>
+    </amp-img>
+    <figcaption>Living area</figcaption>
+  </figure>
+
+  <p>&ldquo;I absolutely love the design/exterior of the front of the house, and I really don't want to ruin the look by adding an overhang (or whatever you call it). But we are really concerned about how hot the house could get in the late spring/summer/early fall months (and the costs associated with keeping it cool/comfortable) when the sun is high. I don't want to have to keep the curtains closed all summer.&rdquo;<br><br>
+
+    <a target="_blank" href="https://www.weather.gov/media/gyx/climo/Monthly-Seasonal-Annual_30_year_normals_1981-2010.pdf">30 year averages</a>: 7106 heating degree days, 360 cooling degree days (July and August only months with more cooling than heating; measured in reference to 65°). 20 times more heating. Maximize insolation, use free cooling in summer. Supplement with radiant floor heating / cooling. </p>
+
+<figure class="small noSelect">
+  <amp-img alt="Cross section"
+    src="img/oc08_800.webp"
+    width="1600"
+    height="1362"
+    srcset="img/oc08_1600.webp 1600w,
+            img/oc08_1200.webp 1200w,
+            img/oc08_800.webp 800w"
+    layout="responsive">
+    <amp-img fallback alt="Cross section"
+      src="img/oc08_800.jpg"
+      width="1600"
+      height="1362"
+      srcset="img/oc08_1600.jpg 1600w,
+              img/oc08_1200.jpg 1200w,
+              img/oc08_800.jpg 800w"
+      layout="responsive">
+    </amp-img>
+  </amp-img>
+  <figcaption>Cross section</figcaption>
+</figure>
+
+<figure class="small noSelect">
+  <amp-img alt="View of wet space"
+    src="img/oc11_800.webp"
+    width="1600"
+    height="1090"
+    srcset="img/oc11_1600.webp 1600w,
+            img/oc11_1200.webp 1200w,
+            img/oc11_800.webp 800w"
+    layout="responsive">
+    <amp-img fallback alt="View of wet space"
+      src="img/oc11_800.jpg"
+      width="1600"
+      height="1090"
+      srcset="img/oc11_1600.jpg 1600w,
+              img/oc11_1200.jpg 1200w,
+              img/oc11_800.jpg 800w"
+      layout="responsive">
+    </amp-img>
+  </amp-img>
+  <figcaption>Wet space</figcaption>
+</figure>
+
+<p>07 2100 THERMAL INSULATION<br>
+Thermal Resistance: Minimum R-4.0 per inch.<br>
+Water Vapor Permeance: ASTM E 96, 30.9 perms.<br>
+Moisture Resistance: ASTM C 1104 sorption, 0.05%.<br>
+Fungi Resistance: ASTM C 1338, zero mold growth.<br>
+Compressive Strength: 743 psf at 10%, 1269 psf at 25%.<br>
+Product: Roxul ComfortBoard IS<br><br>
+
+07 4113 METAL ROOF PANELS<br>
+Metal roof panels: Corrugated steel, sine wave profile, 7/8" high, 20 gauge minimum thickness, galvanized shop-applied finish.<br>
+Fasteners: Stainless steel sealed with gasketed washers.<br><br>
+
+08 1613 FIBERGLASS DOORS<br>
+Products: Marvin Integrity Wood-Ultrex Outswing French Door, X and O panels as noted on drawings.<br>
+Vertical mull: ½" vertical MRF mull per manufacturer.
+</p>
+
+<figure class="small noSelect">
+  <amp-img alt="Deck at dusk"
+    src="img/oc12_800.webp"
+    width="1600"
+    height="998"
+    srcset="img/oc12_1600.webp 1600w,
+            img/oc12_1200.webp 1200w,
+            img/oc12_800.webp 800w"
+    layout="responsive">
+    <amp-img fallback alt="Deck at dusk"
+      src="img/oc12_800.jpg"
+      width="1600"
+      height="998"
+      srcset="img/oc12_1600.jpg 1600w,
+              img/oc12_1200.jpg 1200w,
+              img/oc12_800.jpg 800w"
+      layout="responsive">
+    </amp-img>
+  </amp-img>
+  <figcaption>Deck at dusk</figcaption>
+</figure>
 
       <div class="spacer"></div></section><div class="spacerHalf"></div>
 </article>
