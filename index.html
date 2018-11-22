@@ -20,6 +20,7 @@
     text-rendering:optimizeLegibility;
     background:#f7f7fa;
     outline:none;
+    overflow-y:scroll;
   }
   a{
     color:inherit;
@@ -413,7 +414,6 @@
 
       <div class="spacer"></div></section><div class="spacerHalf"></div>
 </article>
-
 
 <article id="oc1" [hidden]="tags.oldCluff == false">
         <figure id="oc1f" class="large noSelect" role="article" tabindex="0"  on="tap:AMP.setState({tags: {accordion: !tags.accordion}}),oc1.scrollTo(duration=1)">
