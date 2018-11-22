@@ -369,6 +369,52 @@
       <div class="spacer"></div></section><div class="spacerHalf"></div>
 </article>
 
+<article id="sm4" [hidden]="tags.sacredMountain == false">
+        <figure id="sm4f" class="large noSelect" role="article" tabindex="0"  on="tap:AMP.setState({tags: {accordion: !tags.accordion}}),sm4.scrollTo(duration=1)">
+          <amp-img class="cover" alt="Rammed Earth Rendering"
+            src="img/sm14_1200.webp"
+            srcset="img/sm14_2400.webp 2400w,
+                    img/sm14_1800.webp 1800w,
+                    img/sm14_1200.webp 1200w"
+            layout="fill">
+            <amp-img class="cover" fallback alt="Rammed Earth Rendering"
+              src="img/sm14_1200.jpg"
+              srcset="img/sm14_2400.jpg 2400w,
+                      img/sm14_1800.jpg 1800w,
+                      img/sm14_1200.jpg 1200w"
+              layout="fill">
+            </amp-img>
+          </amp-img>
+        <div class="articleTitle">2018 08 08&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sacred Mountain&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mockup</div>
+      </figure>
+      <div class="spacerHalf"></div><section [hidden]="tags.accordion == true">
+
+        <figure class="small noSelect">
+          <amp-img alt="Rammed Earth Color Mockups"
+            src="img/sm15_800.webp"
+            width="1600"
+            height="939"
+            srcset="img/sm15_1600.webp 1600w,
+                    img/sm15_1200.webp 1200w,
+                    img/sm15_800.webp 800w"
+            layout="responsive">
+            <amp-img fallback alt="Rammed Earth Color Mockups"
+              src="img/sm15_800.jpg"
+              width="1600"
+              height="939"
+              srcset="img/sm15_1600.jpg 1600w,
+                      img/sm15_1200.jpg 1200w,
+                      img/sm15_800.jpg 800w"
+              layout="responsive">
+            </amp-img>
+          </amp-img>
+          <figcaption>Rammed Earth Color Mockups</figcaption>
+        </figure>
+
+      <div class="spacer"></div></section><div class="spacerHalf"></div>
+</article>
+
+
 <article id="oc1" [hidden]="tags.oldCluff == false">
         <figure id="oc1f" class="large noSelect" role="article" tabindex="0"  on="tap:AMP.setState({tags: {accordion: !tags.accordion}}),oc1.scrollTo(duration=1)">
           <amp-img class="cover" alt="Aerial rendering of Old Cluff"
