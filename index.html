@@ -130,19 +130,18 @@
     max-width:800px;
     border-radius:3px;
   }
-
   figcaption{
+    margin:-16vh auto 0 auto;
+    width:92%;
+    max-width:800px;
     font-size: 12px;
     text-align: right;
     text-transform: uppercase;
-    margin-top:8px;
     font-weight: 600;
-    opacity:0;
-    transition: all .1s;
-    transition-timing-function: ease-in-out;
+    visibility: hidden;
   }
-  figure.small:hover figcaption{
-    opacity:1;
+  amp-img.small:hover + figcaption{
+    visibility: visible;
   }
   button {
       background:none;
@@ -344,6 +343,7 @@
           </amp-img>
         </amp-img>
         <figcaption>HAM tower elevation</figcaption>
+
 
       <p><q>Really excited about this idea: a pre-engineered, pre-fabricated tower that is trucked to your house and easy to install.<br><br>This type of tower is actually telescoping with an electric motor, meaning you could get onto the platform at its low height and have it lift you above the canopy.</q></p>
 
