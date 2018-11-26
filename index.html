@@ -91,19 +91,16 @@
     top: 0;
     width:100%;
     height:30vh;
-    background:#16161d;
+    background:#fff;
     margin-top:-30vh;
     z-index:10;
     outline:none;
     cursor: pointer;
     box-shadow:0 0 2px #aaa;
-    transition: all .4s;
   }
-  figure.largeClosed{
-    position: relative
-  }
-  figure.large:hover{
-    height:31vh;
+  figure.large:hover .articleTitle{
+    max-width:820px;
+    width:95%;
   }
   amp-img.cover img {
     object-fit: cover;
@@ -120,9 +117,10 @@
     top:calc(30vh - 44px);
     padding-top:2px;
     font-weight: 600;
-    background-color:#f7f7fa;
+    background-color:#f7f6fb;
     border-radius: 2px;
     box-shadow:0 0 2px #aaa inset;
+    transition: all .4s;
   }
   amp-img.small {
     margin:17vh auto;
@@ -303,7 +301,7 @@
 <div class="spacer" id="topPage"></div>
 
 <article id="ha0" [hidden]="tags.schematic == false">
-        <figure id="ha0f" class="large noSelect" role="article" tabindex="0"  on="tap:AMP.setState({tags: {accordion: !tags.accordion}}),ha0.scrollTo(duration=1)">
+        <figure class="large noSelect" role="article" tabindex="0"  on="tap:AMP.setState({tags: {accordion: !tags.accordion}}),ha0.scrollTo(duration=1)">
           <amp-img class="cover" alt="Satellite Image of HAM"
             src="img/ha00_1200.webp"
             srcset="img/ha00_2400.webp 2400w,
