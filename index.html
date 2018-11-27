@@ -58,17 +58,8 @@
     ::selection{
       background-color: rgba(253,253,50,.99);
     }
-    .spacer{
-      height:30vh;
-      outline:none;
-    }
-    .spacerHalf{
-      height:15vh;
-      outline:none;
-    }
-    .spacer100{
-      height:100vh;
-      outline:none;
+    section{
+      padding-bottom:34vh;
     }
     header {
       position: fixed;
@@ -78,7 +69,7 @@
     }
     p{
       font-size: 36px;
-      margin:17vh auto;
+      margin:18vh auto 0 auto;
       width:92%;
       max-width:800px;
       font-weight:200;
@@ -92,11 +83,9 @@
       width:100%;
       height:30vh;
       background:#fff;
-      margin-top:-30vh;
       z-index:10;
       outline:none;
       cursor: pointer;
-      box-shadow:0 0 2px #aaa;
     }
     figure.large:hover .articleTitle{
       max-width:820px;
@@ -123,13 +112,13 @@
       transition: all .4s;
     }
     amp-img.small {
-      margin:17vh auto;
+      margin:18vh auto 0 auto;
       width:92%;
       max-width:800px;
       border-radius:3px;
     }
     figcaption{
-      margin:-16vh auto 0 auto;
+      margin:4px auto -16px auto;
       width:92%;
       max-width:800px;
       font-size: 12px;
@@ -300,7 +289,6 @@
   </button>
 </header>
 
-<div class="spacer" id="topPage"></div>
 
 <article id="sm12" [hidden]="tags.sacredMountain == false">
         <figure class="large noSelect" role="article" tabindex="0"  on="tap:AMP.setState({tags: {accordion: !tags.accordion}}),sm12.scrollTo(duration=1)">
@@ -320,7 +308,7 @@
           </amp-img>
         <div class="articleTitle">2018 11 26&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sacred Mountain&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Preconstruction</div>
       </figure>
-      <div class="spacerHalf"></div><section [hidden]="tags.accordion == true">
+      <section [hidden]="tags.accordion == true">
 
       <p>Measures to simplify design:</p>
 
@@ -369,9 +357,8 @@
       <figcaption>View from Conservatory</figcaption>
 
 
-      <div class="spacer"></div></section><div class="spacerHalf"></div>
+      </section>
 </article>
-
 
 <article id="ha0" [hidden]="tags.schematic == false">
         <figure class="large noSelect" role="article" tabindex="0"  on="tap:AMP.setState({tags: {accordion: !tags.accordion}}),ha0.scrollTo(duration=1)">
@@ -391,7 +378,7 @@
           </amp-img>
         <div class="articleTitle">2018 10 15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HAM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Schematic</div>
       </figure>
-      <div class="spacerHalf"></div><section [hidden]="tags.accordion == true">
+      <section [hidden]="tags.accordion == true">
 
       <p>Use: Lookout tower, meditation stilt.<br><br>Footprint: 24 SF<br><br>Products: Galvanized steel heavy-duty crank-up radio tower, wood platform</p>
 
@@ -418,7 +405,7 @@
 
       <p><q>Really excited about this idea: a pre-engineered, pre-fabricated tower that is trucked to your house and easy to install.<br><br>This type of tower is actually telescoping with an electric motor, meaning you could get onto the platform at its low height and have it lift you above the canopy.</q></p>
 
-      <div class="spacer"></div></section><div class="spacerHalf"></div>
+    </section>
 </article>
 
 <article id="sm4" [hidden]="tags.sacredMountain == false">
@@ -439,7 +426,7 @@
           </amp-img>
         <div class="articleTitle">2018 08 08&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sacred Mountain&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mockup</div>
       </figure>
-      <div class="spacerHalf"></div><section [hidden]="tags.accordion == true">
+    <section [hidden]="tags.accordion == true">
 
         <p><a href="https://www.terrafirmabuilders.ca/what-is-sirewall/" target="_blank">Terra Firma Builders</a> to provide two rammed earth color mockups on-site:<br><br>
         1. Similar to the images of Trader Studio in color, variation of color, waviness, and termination of lifts.<br><br>
@@ -469,7 +456,7 @@
 
         <p><q>Looks really good! I personally continue to like the one on the left. The stronger contrasts look nice.</q></p>
 
-      <div class="spacer"></div></section><div class="spacerHalf"></div>
+      </section>
 </article>
 
 <article id="sm7" [hidden]="tags.sacredMountain == false">
@@ -490,7 +477,7 @@
           </amp-img>
         <div class="articleTitle">2018 08 02&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sacred Mountain&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construction Documents</div>
       </figure>
-      <div class="spacerHalf"></div><section [hidden]="tags.accordion == true">
+      <section [hidden]="tags.accordion == true">
 
         <p>Climate zone: 5<br>
         Ground snow load: 50psf<br>
@@ -776,8 +763,7 @@
           </amp-img>
           <figcaption>Night view from East detail</figcaption>
 
-
-      <div class="spacer"></div></section><div class="spacerHalf"></div>
+      </section>
 </article>
 
 <article id="oc1" [hidden]="tags.oldCluff == false">
@@ -798,7 +784,7 @@
           </amp-img>
         <div class="articleTitle">2018 07 18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Old Cluff&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Permit</div>
       </figure>
-      <div class="spacerHalf"></div><section [hidden]="tags.accordion == true">
+      <section [hidden]="tags.accordion == true">
 
 
         <amp-img class="small noSelect" alt="Axonometric finishes and framing"
@@ -1053,8 +1039,7 @@
       </amp-img>
       <figcaption>Deck at dusk</figcaption>
 
-
-      <div class="spacer"></div></section><div class="spacerHalf"></div>
+      </section>
 </article>
 
 <article id="sm11" [hidden]="tags.sacredMountain == false">
@@ -1075,7 +1060,7 @@
           </amp-img>
         <div class="articleTitle">2018 04 13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sacred Mountain&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Design Development</div>
       </figure>
-      <div class="spacerHalf"></div><section [hidden]="tags.accordion == true">
+      <section [hidden]="tags.accordion == true">
 
 
           <amp-img class="small noSelect" alt="Site Axonometric"
@@ -1260,7 +1245,7 @@
           </amp-img>
           <figcaption>View toward Entry from Bedroom</figcaption>
 
-      <div class="spacer"></div></section><div class="spacerHalf"></div>
+      </section>
 </article>
 
 <article id="sm10" [hidden]="tags.sacredMountain == false">
@@ -1281,7 +1266,7 @@
           </amp-img>
         <div class="articleTitle">2018 03 18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sacred Mountain&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Design Development</div>
       </figure>
-      <div class="spacerHalf"></div><section [hidden]="tags.accordion == true">
+      <section [hidden]="tags.accordion == true">
 
         <p>This site has a distinct and understated character: an echo of its previous state. The goal is to keep it as authentic as possible—truly, site restoration. Mt. Tuam is geologically composed of colluvial and glacial drift, essentially sandy loam and mineral gravel atop hard rock. At 1,450 ft of altitude under marine exposure we find there is hardly much more than trees, lichen, and moss that volunteer here.
         </p>
@@ -1359,7 +1344,7 @@
           </amp-img>
           <figcaption>Hardscape and pool materials</figcaption>
 
-      <div class="spacer"></div></section><div class="spacerHalf"></div>
+      </section>
 </article>
 
 <article id="st0" [hidden]="tags.schematic == false">
@@ -1380,7 +1365,7 @@
           </amp-img>
         <div class="articleTitle">2018 02 09&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stand&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Schematic</div>
       </figure>
-      <div class="spacerHalf"></div><section [hidden]="tags.accordion == true">
+      <section [hidden]="tags.accordion == true">
 
       <p>Use: Cabin, accessory dwelling unit.<br><br>Footprint: 160 SF<br><br>Products: Steel deer stand, Aerogel insulated fabric</p>
 
@@ -1428,7 +1413,7 @@
       </amp-img>
       <figcaption>Figuration Sketch</figcaption>
 
-      <div class="spacer"></div></section><div class="spacerHalf"></div>
+      </section>
 </article>
 
 <article id="sm9" [hidden]="tags.sacredMountain == false">
@@ -1449,7 +1434,7 @@
           </amp-img>
         <div class="articleTitle">2018 01 29&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sacred Mountain&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Design Development</div>
       </figure>
-      <div class="spacerHalf"></div><section [hidden]="tags.accordion == true">
+      <section [hidden]="tags.accordion == true">
 
         <p><q>I have put together two options to meet your request to open up the Conservatory with glass both out to the horizon and above to the sky. We can support the glass with timber framing, and incorporate roof vents for summer cooling.</q></p>
 
@@ -1521,7 +1506,7 @@
           </amp-img>
           <figcaption>View through Conservatory at Entry</figcaption>
 
-      <div class="spacer"></div></section><div class="spacerHalf"></div>
+      </section>
 </article>
 
 <article id="sm3" [hidden]="tags.sacredMountain == false">
@@ -1542,7 +1527,7 @@
           </amp-img>
         <div class="articleTitle">2017 12 01&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sacred Mountain&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Schematic</div>
       </figure>
-      <div class="spacerHalf"></div><section [hidden]="tags.accordion == true">
+      <section [hidden]="tags.accordion == true">
 
 
           <amp-img class="small noSelect" alt="Physical Model from South"
@@ -1634,7 +1619,7 @@
           </amp-img>
           <figcaption>Digital Model from Southeast</figcaption>
 
-      <div class="spacer"></div></section><div class="spacerHalf"></div>
+      </section>
 </article>
 
 <article id="sm8" [hidden]="tags.sacredMountain == false">
@@ -1655,7 +1640,7 @@
           </amp-img>
         <div class="articleTitle">2017 12 01&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sacred Mountain&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Schematic</div>
       </figure>
-      <div class="spacerHalf"></div><section [hidden]="tags.accordion == true">
+      <section [hidden]="tags.accordion == true">
 
         <p>After processing through the undulating glacial geology of Salt Spring Island, a visitor winds up a mountain of exposed tholeiitic basalt through thinning evergreen canopy. At the driveway base, a game of peekaboo begins: the driver catches and loses glimpse views as they near the lookout.</p>
 
@@ -1990,7 +1975,7 @@
           </amp-img>
           <figcaption>View from pool</figcaption>
 
-      <div class="spacer"></div></section><div class="spacerHalf"></div>
+      </section>
 </article>
 
 <article id="sm6" [hidden]="tags.sacredMountain == false">
@@ -2011,7 +1996,7 @@
           </amp-img>
         <div class="articleTitle">2017 10 23&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sacred Mountain&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Schematic</div>
       </figure>
-      <div class="spacerHalf"></div><section [hidden]="tags.accordion == true">
+      <section [hidden]="tags.accordion == true">
 
         <p>Perched high on glacially-sculpted rock, the site reveals a sweeping view of the British Columbia's southern gulf islands and at least three distant mainland volcanoes.</p>
 
@@ -2196,7 +2181,7 @@
           </amp-img>
           <figcaption>Site view from East</figcaption>
 
-      <div class="spacer"></div></section><div class="spacerHalf"></div>
+      </section>
 </article>
 
 <article id="sm5" [hidden]="tags.sacredMountain == false">
@@ -2217,7 +2202,7 @@
           </amp-img>
         <div class="articleTitle">2017 09 25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sacred Mountain&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Schematic</div>
       </figure>
-      <div class="spacerHalf"></div><section [hidden]="tags.accordion == true">
+      <section [hidden]="tags.accordion == true">
 
         <p><q>The primary ambition of the design has been to disappear into the landscape as much as possible. Some parts have been bermed, while others have been conceptualized as greenhouse-like spaces that sit lightly above the ground.</q></p>
 
@@ -2293,7 +2278,7 @@
           </amp-img>
           <figcaption>Second Floor Sketch</figcaption>
 
-      <div class="spacer"></div></section><div class="spacerHalf"></div>
+      </section>
 </article>
 
 <article id="oc0" [hidden]="tags.oldCluff == false">
@@ -2314,7 +2299,7 @@
           </amp-img>
         <div class="articleTitle">2017 09 10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Old Cluff&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prompt</div>
       </figure>
-      <div class="spacerHalf"></div><section [hidden]="tags.accordion == true">
+      <section [hidden]="tags.accordion == true">
 
       <p>Location: 43.41&deg; N, 70.48&deg; W<br>Kennebunkport, ME<br><br>Use: Full-time Home<br><br>Lot Size: 3.04 acres<br><br>Target Footprint: 1,200 SF<br><br>Design Duration: 2 months</p>
 
@@ -2344,7 +2329,7 @@
     Framing is laid out for advanced framing techniques to use less lumber (24" on center rather than 16").<br><br>
     The roof extends from the house to the garage, creating an exterior deck. An compluvium-like opening in the roof could bring more light into that dogtrot space.</q></p>
 
-      <div class="spacer"></div></section><div class="spacerHalf"></div>
+      </section>
 </article>
 
 <article id="sm2" [hidden]="tags.sacredMountain == false">
@@ -2365,7 +2350,7 @@
           </amp-img>
         <div class="articleTitle">2017 08 22&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sacred Mountain&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Programming</div>
       </figure>
-      <div class="spacerHalf"></div><section [hidden]="tags.accordion == true">
+      <section [hidden]="tags.accordion == true">
 
         <p>(GOALS: tactics)<br><br>
         TO BE HEALTHY: no red list materials, low VOC<br><br>
@@ -2417,7 +2402,7 @@
           </amp-img>
           <figcaption>Program</figcaption>
 
-      <div class="spacer"></div></section><div class="spacerHalf"></div>
+      </section>
 </article>
 
 <article id="sm1" [hidden]="tags.sacredMountain == false">
@@ -2438,7 +2423,7 @@
           </amp-img>
         <div class="articleTitle">2017 05 25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sacred Mountain&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Climate Studies</div>
       </figure>
-      <div class="spacerHalf"></div><section [hidden]="tags.accordion == true">
+      <section [hidden]="tags.accordion == true">
 
       <p>Three studies indicating the weather conditions on site, based on hourly weather reports from the nearest weather station (Victoria International Airport).
         <br><br>
@@ -2448,7 +2433,7 @@
 
       Daytime summer wind is predominantly from the East, meaning we can orient passive cooling to that face. Cold nighttime winter wind seems to mostly come from the West, so we should make sure to insulate and minimize openings on that face.</p>
 
-      <div class="spacer"></div></section><div class="spacerHalf"></div>
+      </section>
 </article>
 
 <article id="sm0" [hidden]="tags.sacredMountain == false">
@@ -2469,7 +2454,7 @@
           </amp-img>
         <div class="articleTitle">2017 04 23&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sacred Mountain&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prompt</div>
       </figure>
-      <div class="spacerHalf"></div><section [hidden]="tags.accordion == true">
+      <section [hidden]="tags.accordion == true">
 
       <p>Location: 48.74&deg; N, 123.46&deg; W<br>Salt Spring Island, BC<br><br>Use: Full-time Home<br><br>Lot Size: 7.65 acres<br><br>Target Footprint: 5,000 SF<br><br>Design Duration: 11 months</p>
 
@@ -2517,7 +2502,7 @@
         </amp-img>
         <figcaption>Tectonics</figcaption>
 
-      <div class="spacer"></div></section><div class="spacerHalf"></div>
+      </section>
 </article>
 
 <article id="ab3" [hidden]="tags.about == false">
@@ -2539,7 +2524,7 @@
         <div class="articleTitle">2016 11 02&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BADHOUSE</div>
       </figure>
 
-      <div class="spacerHalf"></div><section [hidden]="tags.accordion == true">
+      <section [hidden]="tags.accordion == true">
 
       <p>We are two architects working to build the leanest, most resilient spaces possible. No magic, no fuss.<br><br><br>What if your house already exists, but it just doesn't look like a house?</p>
 
@@ -2617,7 +2602,7 @@
       Rather than forcing the house to be a complex machine for living, let's use the house as a husk we can live in, grow with, and understand.<br><br>
       Let's build better.</p>
 
-      <div class="spacer"></div></section><div class="spacerHalf"></div>
+      </section>
 </article>
 
 <article id="ab2" [hidden]="tags.about == false">
@@ -2639,7 +2624,7 @@
         <div class="articleTitle">1987 06 27&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mark Keller</div>
       </figure>
 
-      <div class="spacerHalf"></div><section [hidden]="tags.accordion == true">
+      <section [hidden]="tags.accordion == true">
 
       <p>Howdy, my name is <a href="http://mwkeller.com" target="_blank">Mark Keller</a>. I am a registered architect, pretending not to be a dreamer. With experience in residential and hospitality design, I've also tried my hand as a bike mechanic, a bridge abutment builder, and a digital ornithologist.<br><br>
       I don't let on that my background is in computers, math, and science, and I try to suppress this when engaging more philosophical pursuits in design. I enjoy using my hands to sketch and build, always looking to translate to the digital world of coding, modeling, rendering, et cetera.<br><br>
@@ -2656,7 +2641,7 @@
       HAPPY PLACE: Maine coast, during a storm<br><br>
       WEBSITE: <a href="http://mwkeller.com" target="_blank">mwkeller.com</a></p>
 
-      <div class="spacer"></div></section><div class="spacerHalf"></div>
+      </section>
 </article>
 
 <article id="ab1" [hidden]="tags.about == false">
@@ -2678,7 +2663,7 @@
         <div class="articleTitle">1986 07 24&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Annie Aldrich</div>
       </figure>
 
-      <div class="spacerHalf"></div><section [hidden]="tags.accordion == true">
+      <section [hidden]="tags.accordion == true">
 
       <p>Hiya, my name is <a href="https://annelise.info" target="_blank">Annie Aldrich</a>. I'm a registered architect with a bad habit of getting stuff done. I have experience designing residential, retail, and hospitality spaces, and I am also a landscape designer of urban parks and plazas. While I love a good meal on plush cushions, I am always yearning to go run up a hill.<br><br>
       My joy in design comes in the synthesis of human and material considerations. The sociology of an interaction, the geology of a region, and the tectonic of material systems all come together in architecture. This complex junction creates a window to the world, a window I typically want to climb out of.<br><br>
@@ -2695,7 +2680,7 @@
       HAPPY PLACE: Anywhere in the sun.<br><br>
       WEBSITE: <a href="https://annelise.info" target="_blank">annelise.info</a></p>
 
-      <div class="spacer"></div></section>
+      </section>
 </article>
 
 <div id="UP" role="button" tabindex="0" on="tap:AMP.setState({tags: {about:true,sacredMountain:true,oldCluff:true,schematic:true,accordion:false}}),topPage.scrollTo(duration=1400)">⌭</div>
