@@ -6,7 +6,6 @@
   <meta name="description" content="We are two architects working to build the leanest, most resilient spaces possible. No magic, no fuss. Let's build better.">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
-  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
   <style amp-custom>
       @font-face {
@@ -2695,32 +2694,5 @@
 
 <div id="UP" role="button" tabindex="0" on="tap:AMP.setState({tags: {about:true,sacredMountain:true,oldCluff:true,schematic:true,accordion:false}}),topPage.scrollTo(duration=1400)">⌭</div>
 
-<amp-analytics type="googleanalytics">
-  <script type="application/json">
-  {
-    "vars": {
-      "account": "UA-126023124-1"
-    },
-    "triggers": {
-        "trackPageview": {
-          "on": "visible",
-          "request": "pageview",
-          "vars": {
-            "title": "BADHOUSE Architects"
-          }
-        },
-        "trackClickOnHeader" : {
-          "on": "click",
-          "selector": "article",
-          "request": "event",
-          "vars": {
-            "eventCategory": "ui-components",
-            "eventAction": "header-click"
-          }
-        }
-      }
-  }
-  </script>
-</amp-analytics>
 </body>
 </html>
