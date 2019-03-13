@@ -7,6 +7,7 @@
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
   <script async custom-element="amp-bodymovin-animation" src="https://cdn.ampproject.org/v0/amp-bodymovin-animation-0.1.js"></script>
+  <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
 
   <style amp-custom>
       @font-face {
@@ -159,7 +160,7 @@
         box-shadow:0 0 2px #aaa inset;
         transition: all .3s;
       }
-      amp-img.small {
+      .small {
         margin:18vh auto 0 auto;
         width:92%;
         max-width:800px;
@@ -404,27 +405,23 @@
 
       <p>We are designing post frame homes that are more affordable than a typical custom build, but that are also quite energy efficient and healthy.<br><br>We are patent-pending on the envelope technique we implement, which allows for exposed structure on the interior and should maintain the building for 100+ years by keeping the structure and sheathing warm, dry, and air-tight.<br><br>We think this envelope method performs better than anything else being built, and has yet to be otherwise implemented with post frame technology.</p>
 
-        <amp-img class="small noSelect" alt="Ocean view glass"
-          src="img/mt03_800.webp"
+        <amp-youtube class="small noSelect" alt="Light Study"
+          data-videoid="ESvdq2WGRjE"
           width="1600"
-          height="749"
-          srcset="img/mt03_1600.webp 1600w,
-                  img/mt03_1200.webp 1200w,
-                  img/mt03_800.webp 800w"
-          layout="responsive">
-          <amp-img fallback alt="Ocean view glass"
-            src="img/mt03_800.jpg"
-            width="1600"
-            height="757"
-            srcset="img/mt03_1600.jpg 1600w,
-                    img/mt03_1200.jpg 1200w,
-                    img/mt03_800.jpg 800w"
-            layout="responsive">
-          </amp-img>
-        </amp-img>
-        <figcaption>Ocean View Glass</figcaption>
+          height="843"
+          layout="responsive"
+          data-param-modestbranding="1"
+          data-param-rel="0"
+          data-param-loop="1"
+          data-param-playlist="ESvdq2WGRjE"
+          data-param-controls="0"
+          data-param-showinfo="0"
+          data-param-disablekb="1"
+          autoplay>
+        </amp-youtube>
+        <figcaption>Light Study</figcaption>
 
-        <p>Footprint: 3,600 SF house and 760 SF cottage<br><br>Structure: 14' tall posts, 32’ wide trusses, girts & purlins<br><br>Materials: concrete, SPF, plywood, mineral wool insulation, corrugated metal roof, cedar rainscreen siding</p>
+        <p>The walls might look inside-out, but we are using walls that avoid any sort of gypsum wallboard. The studs are laid bare, whitewashed. Atop them is a plywood (formaldehyde-free) and sound clip sandwich to isolate sound transmission between spaces. We love the look of exposed structure done well, along with the light and sound-baffling qualities.</p>
 
       <amp-img class="small noSelect" alt="Structural Axonometric"
         src="img/mt01_800.webp"
@@ -446,6 +443,8 @@
       </amp-img>
       <figcaption>Structural Axonometric</figcaption>
 
+      <p>Footprint: 3,600 SF house and 760 SF cottage<br><br>Structure: 14' tall posts, 32’ wide trusses, girts & purlins<br><br>Materials: concrete, SPF, plywood, mineral wool insulation, corrugated metal roof, cedar rainscreen siding</p>
+
       <amp-img class="small noSelect" alt="Section"
         src="img/mt02_800.webp"
         width="1600"
@@ -465,6 +464,26 @@
         </amp-img>
       </amp-img>
       <figcaption>Section</figcaption>
+
+      <amp-img class="small noSelect" alt="Ocean view glass"
+        src="img/mt03_800.webp"
+        width="1600"
+        height="749"
+        srcset="img/mt03_1600.webp 1600w,
+                img/mt03_1200.webp 1200w,
+                img/mt03_800.webp 800w"
+        layout="responsive">
+        <amp-img fallback alt="Ocean view glass"
+          src="img/mt03_800.jpg"
+          width="1600"
+          height="757"
+          srcset="img/mt03_1600.jpg 1600w,
+                  img/mt03_1200.jpg 1200w,
+                  img/mt03_800.jpg 800w"
+          layout="responsive">
+        </amp-img>
+      </amp-img>
+      <figcaption>Ocean View Glass</figcaption>
       </section>
 </article>
 
