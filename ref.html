@@ -302,6 +302,7 @@
       {
         "sacredMountain": true,
         "oldCluff":true,
+        "mountTuam":true,
         "schematic":true,
         "about": true,
         "accordion": false
@@ -352,22 +353,27 @@
 
 <div id="sidebar1">
   <label class="container noSelect">
-    <input type="radio" name="tags" value="All Posts" checked on="change:AMP.setState({tags: {about:true,sacredMountain:true,oldCluff:true,schematic:true}}),sidebar1.toggleClass(class=clicked),topPage.scrollTo(duration=600),hamburgerTop.toggleClass(class=clicked)">
-    <span class="checkmark">All Posts</span>
+    <input type="radio" name="tags" value="All Posts" checked on="change:AMP.setState({tags: {about:true,mountTuam:true,sacredMountain:true,oldCluff:true,schematic:true}}),sidebar1.toggleClass(class=clicked),topPage.scrollTo(duration=600),hamburgerTop.toggleClass(class=clicked)">
+    <span class="checkmark">All Projects</span>
   </label>
 
   <label class="container noSelect">
-    <input type="radio" name="tags" value="Sacred Mountain" on="change:AMP.setState({tags: {about:false,sacredMountain:true,oldCluff:false,schematic:false}}),sidebar1.toggleClass(class=clicked),topPage.scrollTo(duration=600),hamburgerTop.toggleClass(class=clicked)">
-    <span class="checkmark">Sacred Mountain</span>
+    <input type="radio" name="tags" value="Sacred Mountain" on="change:AMP.setState({tags: {about:false,mountTuam:true,sacredMountain:false,oldCluff:false,schematic:false}}),sidebar1.toggleClass(class=clicked),topPage.scrollTo(duration=600),hamburgerTop.toggleClass(class=clicked)">
+    <span class="checkmark">Mount Tuam</span>
   </label>
 
   <label class="container noSelect">
-    <input type="radio" name="tags" value="Old Cluff" on="change:AMP.setState({tags: {about:false,sacredMountain:false,oldCluff:true,schematic:false}}),sidebar1.toggleClass(class=clicked),topPage.scrollTo(duration=600),hamburgerTop.toggleClass(class=clicked)">
+    <input type="radio" name="tags" value="Old Cluff" on="change:AMP.setState({tags: {about:false,mountTuam:false,sacredMountain:false,oldCluff:true,schematic:false}}),sidebar1.toggleClass(class=clicked),topPage.scrollTo(duration=600),hamburgerTop.toggleClass(class=clicked)">
     <span class="checkmark">Old Cluff</span>
   </label>
 
   <label class="container noSelect">
-    <input type="radio" name="tags" value="About" on="change:AMP.setState({tags: {about:true,sacredMountain:false,oldCluff:false,schematic:false}}),sidebar1.toggleClass(class=clicked),topPage.scrollTo(duration=600),hamburgerTop.toggleClass(class=clicked)">
+    <input type="radio" name="tags" value="Sacred Mountain" on="change:AMP.setState({tags: {about:false,mountTuam:false,sacredMountain:true,oldCluff:false,schematic:false}}),sidebar1.toggleClass(class=clicked),topPage.scrollTo(duration=600),hamburgerTop.toggleClass(class=clicked)">
+    <span class="checkmark">Sacred Mountain</span>
+  </label>
+
+  <label class="container noSelect">
+    <input type="radio" name="tags" value="About" on="change:AMP.setState({tags: {about:true,mountTuam:false,sacredMountain:false,oldCluff:false,schematic:false}}),sidebar1.toggleClass(class=clicked),topPage.scrollTo(duration=600),hamburgerTop.toggleClass(class=clicked)">
     <span class="checkmark">About</span>
   </label>
 
@@ -375,6 +381,93 @@
 </div>
 
 <div id="topPage"></div>
+
+<article id="mt01" [hidden]="tags.mountTuam == false">
+        <figure class="large noSelect" role="article" tabindex="0"  on="tap:AMP.setState({tags: {accordion: !tags.accordion}}),mt01.scrollTo(duration=1)">
+          <amp-img class="cover" alt="View from Driveway"
+            src="img/mt00_1200.webp"
+            srcset="img/mt00_2400.webp 2400w,
+                    img/mt00_1800.webp 1800w,
+                    img/mt00_1200.webp 1200w"
+            layout="fill">
+            <amp-img class="cover" fallback alt="View from Driveway"
+              src="img/mt00_1200.jpg"
+              srcset="img/mt00_2400.jpg 2400w,
+                      img/mt00_1800.jpg 1800w,
+                      img/mt00_1200.jpg 1200w"
+              layout="fill">
+            </amp-img>
+          </amp-img>
+        <div class="articleTitle">2019 03 13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mount Tuam&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Schematic Design</div>
+      </figure>
+      <section [hidden]="tags.accordion == true">
+
+      <p>We are designing post frame homes that are more affordable than a typical custom build, but that are also quite energy efficient and healthy.<br><br>We are patent-pending on the envelope technique we implement, which allows for exposed structure on the interior and should maintain the building for 100+ years by keeping the structure and sheathing warm, dry, and air-tight.<br><br>We think this envelope method performs better than anything else being built, and has yet to be otherwise implemented with post frame technology.</p>
+
+        <amp-img class="small noSelect" alt="Ocean view glass"
+          src="img/mt03_800.webp"
+          width="1600"
+          height="749"
+          srcset="img/mt03_1600.webp 1600w,
+                  img/mt03_1200.webp 1200w,
+                  img/mt03_800.webp 800w"
+          layout="responsive">
+          <amp-img fallback alt="Ocean view glass"
+            src="img/mt03_800.jpg"
+            width="1600"
+            height="757"
+            srcset="img/mt03_1600.jpg 1600w,
+                    img/mt03_1200.jpg 1200w,
+                    img/mt03_800.jpg 800w"
+            layout="responsive">
+          </amp-img>
+        </amp-img>
+        <figcaption>Ocean View Glass</figcaption>
+
+        <p>Footprint: 3,600 SF house and 760 SF cottage<br><br>Structure: 14' tall posts, 32’ wide trusses, girts & purlins<br><br>Materials: concrete, SPF, plywood, mineral wool insulation, corrugated metal roof, cedar rainscreen siding</p>
+
+      <amp-img class="small noSelect" alt="Structural Axonometric"
+        src="img/mt01_800.webp"
+        width="1600"
+        height="1265"
+        srcset="img/mt01_1600.webp 1600w,
+                img/mt01_1200.webp 1200w,
+                img/mt01_800.webp 800w"
+        layout="responsive">
+        <amp-img fallback alt="Structural Axonometric"
+          src="img/mt01_800.jpg"
+          width="1600"
+          height="908"
+          srcset="img/mt01_1600.jpg 1600w,
+                  img/mt01_1200.jpg 1200w,
+                  img/mt01_800.jpg 800w"
+          layout="responsive">
+        </amp-img>
+      </amp-img>
+      <figcaption>Structural Axonometric</figcaption>
+
+      <amp-img class="small noSelect" alt="Section"
+        src="img/mt02_800.webp"
+        width="1600"
+        height="991"
+        srcset="img/mt02_1600.webp 1600w,
+                img/mt02_1200.webp 1200w,
+                img/mt02_800.webp 800w"
+        layout="responsive">
+        <amp-img fallback alt="Section"
+          src="img/mt02_800.jpg"
+          width="1600"
+          height="908"
+          srcset="img/mt02_1600.jpg 1600w,
+                  img/mt02_1200.jpg 1200w,
+                  img/mt02_800.jpg 800w"
+          layout="responsive">
+        </amp-img>
+      </amp-img>
+      <figcaption>Section</figcaption>
+      </section>
+</article>
+
 
 <article id="sm12" [hidden]="tags.sacredMountain == false">
         <figure class="large noSelect" role="article" tabindex="0"  on="tap:AMP.setState({tags: {accordion: !tags.accordion}}),sm12.scrollTo(duration=1)">
@@ -441,8 +534,6 @@
         </amp-img>
       </amp-img>
       <figcaption>View from Conservatory</figcaption>
-
-
       </section>
 </article>
 
